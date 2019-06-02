@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "重水飞船",
+    "texture": "cfe734dc-6623-4246-a7bd-00522231b814",
+    "atlas": "",
+    "rect": [
+      24,
+      16,
+      152,
+      168
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

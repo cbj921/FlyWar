@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "防护罩1",
+    "texture": "21686270-67e5-4626-8b91-52c42c3531c8",
+    "atlas": "",
+    "rect": [
+      8,
+      2,
+      184,
+      196
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

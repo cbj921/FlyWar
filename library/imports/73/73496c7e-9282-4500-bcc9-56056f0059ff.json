@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "飞碟",
+    "texture": "7b349e13-d6ff-454d-9746-048707e6b415",
+    "atlas": "",
+    "rect": [
+      24,
+      55,
+      152,
+      94
+    ],
+    "offset": [
+      0,
+      -2
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

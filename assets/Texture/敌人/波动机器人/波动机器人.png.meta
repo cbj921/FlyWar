@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "9d723d6f-5efb-4900-a0cc-414ee0937a07",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "波动机器人": {
+      "ver": "1.0.3",
+      "uuid": "be972a70-1129-4a3f-a2db-9f6fc760127e",
+      "rawTextureUuid": "9d723d6f-5efb-4900-a0cc-414ee0937a07",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0.5,
+      "trimX": 12,
+      "trimY": 12,
+      "width": 176,
+      "height": 175,
+      "rawWidth": 200,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

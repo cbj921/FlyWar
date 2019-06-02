@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "258b18f3-e089-4497-9be5-7588a74c95f6",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "镭射枪 未激活": {
+      "ver": "1.0.3",
+      "uuid": "5a0f3554-14bb-40a9-9c08-dd78021ab6ac",
+      "rawTextureUuid": "258b18f3-e089-4497-9be5-7588a74c95f6",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -14.5,
+      "offsetY": 12.5,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 200,
+      "height": 175,
+      "rawWidth": 229,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "火箭",
+    "texture": "3c5f02c3-ceca-4416-a853-1dc8cb12abb9",
+    "atlas": "",
+    "rect": [
+      64,
+      13,
+      72,
+      174
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "深空炸弹",
+    "texture": "72d46deb-5234-47e8-b396-a93cf2da2d0a",
+    "atlas": "",
+    "rect": [
+      55,
+      37,
+      90,
+      127
+    ],
+    "offset": [
+      0,
+      -0.5
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

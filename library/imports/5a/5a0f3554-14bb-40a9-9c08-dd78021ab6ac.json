@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "镭射枪 未激活",
+    "texture": "258b18f3-e089-4497-9be5-7588a74c95f6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      200,
+      175
+    ],
+    "offset": [
+      -14.5,
+      12.5
+    ],
+    "originalSize": [
+      229,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

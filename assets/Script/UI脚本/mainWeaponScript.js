@@ -1,0 +1,134 @@
+
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        UpgradeBg: cc.Node,
+        attackCoinLabel: cc.Label,
+        speedCoinLabel: cc.Label,
+
+        coinScript:require("coinScript"),
+    },
+
+    popUpgradeWindow() {
+        // 更新各种数值
+        this.getData("mainPlaneObject");
+        // 弹出升级窗口
+        this.showUpgradeBg();
+    },
+
+    /**
+     * @description: 更新数据
+     * @param {string} objectName:传入需要获取到数据的对象名
+     * @return: 
+     */
+    getData(objectName) {
+        this.coinData = cc.sys.localStorage.getItem('coinData');
+        this.mainPlaneData = JSON.parse(cc.sys.localStorage.getItem(objectName));
+
+        let attackLabel = this.UpgradeBg.getChildByName("attackLabel").getComponent(cc.Label);
+        let attackNumber = this.UpgradeBg.getChildByName("attackNumber").getComponent(cc.Label);
+
+        let speedLabel = this.UpgradeBg.getChildByName("speedLabel").getComponent(cc.Label);
+        let speedNumber = this.UpgradeBg.getChildByName("speedNumber").getComponent(cc.Label);
+
+        attackLabel.string = `攻击力 [Lv${this.mainPlaneData.mainWeapon.attackLevel}]`;
+        speedLabel.string = `速度值 [Lv${this.mainPlaneData.mainWeapon.speedLevel}]`;
+
+        attackNumber.string = this.mainPlaneData.mainWeapon.attackNumber;
+        speedNumber.string = this.mainPlaneData.mainWeapon.speedNumber/10; // 除10是因为用小数会有精度问题，所以speed初始为30，而不是3
+
+        this.attackCoinLabel.string = this.mainPlaneData.mainWeapon.attackCost;
+        this.speedCoinLabel.string = this.mainPlaneData.mainWeapon.speedCost;
+
+        // 如果金钱比升级费用少字体就为红色
+        if (this.coinData >= this.mainPlaneData.mainWeapon.attackCost) {
+            this.attackCoinLabel.node.color = cc.color(255, 255, 255, 255);
+        } else {
+            this.attackCoinLabel.node.color = cc.color(255, 0, 0, 255);
+        }
+        if (this.coinData >= this.mainPlaneData.mainWeapon.speedCost) {
+            this.speedCoinLabel.node.color = cc.color(255, 255, 255, 255);
+        } else {
+            this.speedCoinLabel.node.color = cc.color(255, 0, 0, 255);
+        }
+
+    },
+
+    // 这个是按键用的函数
+    attackUpgradeBtn() {
+        // 点击攻击力升级按钮
+        let money = Math.floor(this.coinData - this.mainPlaneData.mainWeapon.attackCost);// 不能出现小数
+        if (money >= 0) {
+            // 更新金钱
+            this.coinData = money;
+            cc.sys.localStorage.setItem("coinData", this.coinData);//把钱存储
+            this.coinScript.init(); // 更新金钱标签
+            // 更新战机数值
+            this.updatePlaneData('attack');
+        }
+    },
+    speedUpgradeBtn() {
+        // 点击攻速升级按钮
+        let money = Math.floor(this.coinData - this.mainPlaneData.mainWeapon.speedCost);// 不能出现小数
+        if (money >= 0) {
+            // 更新金钱
+            this.coinData = money;
+            cc.sys.localStorage.setItem("coinData", this.coinData);//把钱存储
+            this.coinScript.init(); // 更新金钱标签
+            // 更新战机数值
+            this.updatePlaneData('speed');
+        }
+    },
+
+    // 更新飞机数据
+    updatePlaneData(properyName) {
+        // 攻击
+        if(properyName == 'attack'){
+            this.mainPlaneData.mainWeapon.attackLevel++;
+            this.mainPlaneData.mainWeapon.attackNumber += 5; //每升一级加5
+            if (this.mainPlaneData.mainWeapon.attackLevel % 10 == 1) {
+                // 每升级10次额外加50
+                this.mainPlaneData.mainWeapon.attackNumber +=50;
+            }
+            this.mainPlaneData.mainWeapon.attackCost = Math.floor(this.mainPlaneData.mainWeapon.attackCost*2); //每次升级费用翻2倍 
+            cc.sys.localStorage.setItem("mainPlaneObject",JSON.stringify(this.mainPlaneData));
+            this.getData("mainPlaneObject"); // 更新数值
+        }
+        //  速度
+        if(properyName == 'speed'){
+            this.mainPlaneData.mainWeapon.speedLevel++;
+            this.mainPlaneData.mainWeapon.speedNumber += 2; //每升一级加2
+            if (this.mainPlaneData.mainWeapon.speedLevel % 10 == 1) {
+                // 每升级10次额外加3
+                this.mainPlaneData.mainWeapon.speedNumber +=30;
+            }
+
+            this.mainPlaneData.mainWeapon.speedCost = Math.floor(this.mainPlaneData.mainWeapon.speedCost*2); //每次升级费用翻2倍 
+
+            cc.sys.localStorage.setItem("mainPlaneObject",JSON.stringify(this.mainPlaneData));
+            this.getData("mainPlaneObject"); // 更新数值
+        }
+    },
+
+
+    showIcon(){
+        this.node.active = true;
+    },
+    hideIcon(){
+        this.node.active = false;
+    },
+
+    showUpgradeBg(){
+        this.UpgradeBg.position = cc.v2(544, 416);
+    },
+    hideUpgradeBg(){
+        this.UpgradeBg.position = cc.v2(4000, 416); // 随意设的坐标，只要不让他显示在可见区域就行，不用node的active是因为active对性能影响较大
+    },
+
+    onLoad() {
+
+    },
+
+    // update (dt) {},
+});

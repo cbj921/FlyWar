@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "bae7eef1-f12b-4fd5-95d3-bdf6fcbe9bae",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "分裂炮 未激活": {
+      "ver": "1.0.3",
+      "uuid": "bf936799-0891-4283-a300-210111f386d1",
+      "rawTextureUuid": "bae7eef1-f12b-4fd5-95d3-bdf6fcbe9bae",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 12,
+      "trimY": 25,
+      "width": 176,
+      "height": 150,
+      "rawWidth": 200,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

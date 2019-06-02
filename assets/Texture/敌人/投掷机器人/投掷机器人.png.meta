@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "1ce76ced-d15c-4c72-92ec-c4465505a7cd",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "投掷机器人": {
+      "ver": "1.0.3",
+      "uuid": "bdbe7347-0abd-4a69-92b2-b7405775eeb8",
+      "rawTextureUuid": "1ce76ced-d15c-4c72-92ec-c4465505a7cd",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -2,
+      "offsetY": 0.5,
+      "trimX": 34,
+      "trimY": 10,
+      "width": 128,
+      "height": 179,
+      "rawWidth": 200,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

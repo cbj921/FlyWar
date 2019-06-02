@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "5d98f673-dff6-4fd9-aa9b-7c52a71669bf",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "钛金回旋镖": {
+      "ver": "1.0.3",
+      "uuid": "f300edba-3f12-4edf-ae80-c9e75447c12a",
+      "rawTextureUuid": "5d98f673-dff6-4fd9-aa9b-7c52a71669bf",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 200,
+      "height": 200,
+      "rawWidth": 200,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

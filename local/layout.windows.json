@@ -1,0 +1,91 @@
+{
+  "version": "1.1.1",
+  "windows": {
+    "main": {
+      "main": true,
+      "url": "app://editor/index.html",
+      "windowType": "dockable",
+      "x": -8,
+      "y": -8,
+      "width": 1552,
+      "height": 840,
+      "layout": {
+        "children": [
+          {
+            "active": 0,
+            "children": [
+              "hierarchy"
+            ],
+            "height": 721,
+            "type": "panel",
+            "width": 205.9250030517578
+          },
+          {
+            "active": 0,
+            "children": [
+              "assets"
+            ],
+            "height": 721,
+            "type": "panel",
+            "width": 205.9250030517578
+          },
+          {
+            "active": 0,
+            "children": [
+              "scene"
+            ],
+            "height": 721,
+            "type": "panel",
+            "width": 665.7374877929688
+          },
+          {
+            "active": 0,
+            "children": [
+              "inspector",
+              "cocos-services",
+              "console"
+            ],
+            "height": 721,
+            "type": "panel",
+            "width": 454.82501220703125
+          }
+        ],
+        "type": "dock-h"
+      },
+      "panels": [
+        "hierarchy",
+        "assets",
+        "inspector",
+        "cocos-services",
+        "console",
+        "scene"
+      ]
+    }
+  },
+  "panels": {
+    "simulator-debugger": {
+      "x": -8,
+      "y": -8,
+      "width": 1552,
+      "height": 840
+    },
+    "preferences": {
+      "x": 468,
+      "y": 128,
+      "width": 604,
+      "height": 568
+    },
+    "project-settings": {
+      "x": 468,
+      "y": 128,
+      "width": 604,
+      "height": 568
+    },
+    "builder": {
+      "x": 508,
+      "y": 40,
+      "width": 672,
+      "height": 743
+    }
+  }
+}

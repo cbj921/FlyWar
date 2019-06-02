@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "分裂炮 未激活",
+    "texture": "bae7eef1-f12b-4fd5-95d3-bdf6fcbe9bae",
+    "atlas": "",
+    "rect": [
+      12,
+      25,
+      176,
+      150
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

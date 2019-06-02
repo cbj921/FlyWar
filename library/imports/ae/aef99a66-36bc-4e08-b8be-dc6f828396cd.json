@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "startUI",
+    "texture": "a9263e56-3f41-4e91-913a-1a8b19e7af08",
+    "atlas": "",
+    "rect": [
+      11,
+      25,
+      178,
+      150
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

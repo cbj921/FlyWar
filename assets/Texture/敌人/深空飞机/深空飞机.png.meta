@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "28c91629-6e7d-4cf9-a3a2-1737f03d8722",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "深空飞机": {
+      "ver": "1.0.3",
+      "uuid": "2150b50b-adb7-43bb-83c9-55c9bc14a77f",
+      "rawTextureUuid": "28c91629-6e7d-4cf9-a3a2-1737f03d8722",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 3,
+      "offsetY": 3,
+      "trimX": 19,
+      "trimY": 6,
+      "width": 168,
+      "height": 182,
+      "rawWidth": 200,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

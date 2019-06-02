@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "0f68f837-dcc4-4634-b609-9aa0c7b17f4c",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "火箭弹": {
+      "ver": "1.0.3",
+      "uuid": "9c6d5ddb-3bd3-4dac-b473-33f48f01a1d0",
+      "rawTextureUuid": "0f68f837-dcc4-4634-b609-9aa0c7b17f4c",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 38,
+      "trimY": 0,
+      "width": 124,
+      "height": 200,
+      "rawWidth": 200,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

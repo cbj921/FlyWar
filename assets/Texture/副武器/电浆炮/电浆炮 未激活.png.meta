@@ -1,0 +1,31 @@
+{
+  "ver": "2.2.0",
+  "uuid": "bb40b584-c8df-46fd-80bb-b4a70dfb24f1",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "subMetas": {
+    "电浆炮 未激活": {
+      "ver": "1.0.3",
+      "uuid": "4dc70b22-3074-403d-a12e-1eccd646ccd6",
+      "rawTextureUuid": "bb40b584-c8df-46fd-80bb-b4a70dfb24f1",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 6,
+      "offsetY": 2,
+      "trimX": 23,
+      "trimY": 5,
+      "width": 166,
+      "height": 186,
+      "rawWidth": 200,
+      "rawHeight": 200,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

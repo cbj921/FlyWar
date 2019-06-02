@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "粒子枪 激活",
+    "texture": "e5f7a94e-864d-44db-8724-27eb6261d17f",
+    "atlas": "",
+    "rect": [
+      0,
+      42,
+      200,
+      125
+    ],
+    "offset": [
+      0,
+      -4.5
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

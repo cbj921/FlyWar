@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "深空飞机",
+    "texture": "28c91629-6e7d-4cf9-a3a2-1737f03d8722",
+    "atlas": "",
+    "rect": [
+      19,
+      6,
+      168,
+      182
+    ],
+    "offset": [
+      3,
+      3
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

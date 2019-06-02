@@ -1,0 +1,757 @@
+{
+  "f8e6b000-5643-4b86-9080-aa680ce1f599": {
+    "asset": 1559300202275,
+    "meta": 1551778908000,
+    "relativePath": "image"
+  },
+  "fc09f9bd-2cce-4605-b630-8145ef809ed6": {
+    "asset": 1559300131874,
+    "meta": 1551778908000,
+    "relativePath": "misc"
+  },
+  "f6e6dd15-71d1-4ffe-ace7-24fd39942c05": {
+    "asset": 1559300202718,
+    "meta": 1551778908000,
+    "relativePath": "obsolete"
+  },
+  "f743d2b6-b7ea-4c14-a55b-547ed4d0a045": {
+    "asset": 1559300202735,
+    "meta": 1551778908000,
+    "relativePath": "particle"
+  },
+  "ae6c6c98-11e4-452f-8758-75f5c6a56e83": {
+    "asset": 1559300202291,
+    "meta": 1551778908000,
+    "relativePath": "prefab"
+  },
+  "fb582916-ab76-4c3e-b31f-79216b544195": {
+    "asset": 1559490649781,
+    "meta": 1559479023000,
+    "relativePath": "Texture"
+  },
+  "e2db5394-9f66-4622-9150-2651775aa231": {
+    "asset": 1559479023000,
+    "meta": 1559490719607,
+    "relativePath": "Texture\\background.png"
+  },
+  "10f295f7-8044-48f6-b328-d7ef910db473": {
+    "asset": 1559490649672,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\plane"
+  },
+  "5c809247-5f32-4a5a-a2e9-fd1bbd00e7a4": {
+    "asset": 1559479023000,
+    "meta": 1559490719674,
+    "relativePath": "Texture\\plane\\plane_1.png"
+  },
+  "496e6d32-758e-4127-aaa8-dde64118cf49": {
+    "asset": 1559479023000,
+    "meta": 1559490719690,
+    "relativePath": "Texture\\plane\\plane_2.png"
+  },
+  "1af5cc0e-0ee6-4ff1-a061-6c9ac66ea11d": {
+    "asset": 1559490649640,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\UI"
+  },
+  "a9263e56-3f41-4e91-913a-1a8b19e7af08": {
+    "asset": 1559479023000,
+    "meta": 1559490719705,
+    "relativePath": "Texture\\UI\\base\\startUI.png"
+  },
+  "6ffe9be1-d866-4a62-bd7b-94703f9e2ead": {
+    "asset": 1559479023000,
+    "meta": 1559490719721,
+    "relativePath": "Texture\\UI\\base\\strength.png"
+  },
+  "5702725a-310d-40a2-b4fd-7f7deb15f0c7": {
+    "asset": 1559479023000,
+    "meta": 1559490719705,
+    "relativePath": "Texture\\UI\\base\\effect.png"
+  },
+  "7260a21b-6597-4e20-aac4-16fcfe8d4736": {
+    "asset": 1559479023000,
+    "meta": 1559490719690,
+    "relativePath": "Texture\\UI\\base\\coin.png"
+  },
+  "aa9eeaeb-95bb-4bcb-8a95-43dbdcb9b03e": {
+    "asset": 1559490649656,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\UI\\base"
+  },
+  "13e0a4b1-7b6e-465c-b061-d731d74f1c9c": {
+    "asset": 1559490649797,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\防护罩"
+  },
+  "75709521-6d20-4df9-a333-9f1882c435f7": {
+    "asset": 1559479023000,
+    "meta": 1559490719971,
+    "relativePath": "Texture\\防护罩\\防护罩2.png"
+  },
+  "21686270-67e5-4626-8b91-52c42c3531c8": {
+    "asset": 1559479023000,
+    "meta": 1559490719971,
+    "relativePath": "Texture\\防护罩\\防护罩1.png"
+  },
+  "972ae291-9a61-4ccf-8d84-d4a6d2ccfb52": {
+    "asset": 1559479023000,
+    "meta": 1559490719986,
+    "relativePath": "Texture\\防护罩\\防护罩4.png"
+  },
+  "df9bd333-ded8-4e27-94de-e326c6cac80c": {
+    "asset": 1559479023000,
+    "meta": 1559490719986,
+    "relativePath": "Texture\\防护罩\\防护罩3.png"
+  },
+  "da6e791a-c4ae-4db6-abc8-c96b74409f99": {
+    "asset": 1559479023000,
+    "meta": 1559490720002,
+    "relativePath": "Texture\\防护罩\\防护罩5.png"
+  },
+  "bedfb933-0c4b-42d0-abee-dead3778f97d": {
+    "asset": 1559490649703,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\副武器"
+  },
+  "10fb09ec-fdf9-4fba-898d-22fa0cd9645f": {
+    "asset": 1559490649672,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\副武器\\分裂炮"
+  },
+  "b32d742b-0bda-4b0f-914c-441641e06924": {
+    "asset": 1559479023000,
+    "meta": 1559490719736,
+    "relativePath": "Texture\\副武器\\分裂炮\\分裂炮 激活.png"
+  },
+  "bae7eef1-f12b-4fd5-95d3-bdf6fcbe9bae": {
+    "asset": 1559479023000,
+    "meta": 1559490719736,
+    "relativePath": "Texture\\副武器\\分裂炮\\分裂炮 未激活.png"
+  },
+  "efeb6334-53d0-4767-a9ea-1fd020894cc2": {
+    "asset": 1559490649687,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\副武器\\电浆炮"
+  },
+  "63a63aa9-074e-4bad-995d-c484b5ef8c2d": {
+    "asset": 1559479023000,
+    "meta": 1559490719768,
+    "relativePath": "Texture\\副武器\\分裂炮\\分裂炮弹.png"
+  },
+  "9397bd68-2c77-48ce-b9c6-745e4d2bfce8": {
+    "asset": 1559479023000,
+    "meta": 1559490719783,
+    "relativePath": "Texture\\副武器\\电浆炮\\电流.png"
+  },
+  "bb40b584-c8df-46fd-80bb-b4a70dfb24f1": {
+    "asset": 1559479023000,
+    "meta": 1559490719783,
+    "relativePath": "Texture\\副武器\\电浆炮\\电浆炮 未激活.png"
+  },
+  "93e1a75b-2141-4f37-a91c-f6c2c0dd6b9f": {
+    "asset": 1559479023000,
+    "meta": 1559490719783,
+    "relativePath": "Texture\\副武器\\电浆炮\\电浆炮 激活.png"
+  },
+  "1ff739a1-59f4-44d9-84ff-42428203829f": {
+    "asset": 1559490649703,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\副武器\\粒子枪"
+  },
+  "322e140e-b833-46a5-bc75-aafeec0f2e45": {
+    "asset": 1559479023000,
+    "meta": 1559490719799,
+    "relativePath": "Texture\\副武器\\粒子枪\\放大粒子.png"
+  },
+  "76e15ca5-d124-45d4-9e2a-e12b771f3957": {
+    "asset": 1559479023000,
+    "meta": 1559490719799,
+    "relativePath": "Texture\\副武器\\粒子枪\\粒子枪 未激活.png"
+  },
+  "416708c7-d4f9-4988-bd10-c11fb6a92d3d": {
+    "asset": 1559490649718,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\副武器\\镭射枪"
+  },
+  "e5f7a94e-864d-44db-8724-27eb6261d17f": {
+    "asset": 1559479023000,
+    "meta": 1559490719815,
+    "relativePath": "Texture\\副武器\\粒子枪\\粒子枪 激活.png"
+  },
+  "3c77cd2e-f5fe-4f41-9174-b163e4295b8f": {
+    "asset": 1559479023000,
+    "meta": 1559490719815,
+    "relativePath": "Texture\\副武器\\镭射枪\\激光柱.png"
+  },
+  "dff11ffe-7196-489f-964b-41696772a8ea": {
+    "asset": 1559479023000,
+    "meta": 1559490719830,
+    "relativePath": "Texture\\副武器\\镭射枪\\镭射枪 激活.png"
+  },
+  "258b18f3-e089-4497-9be5-7588a74c95f6": {
+    "asset": 1559479023000,
+    "meta": 1559490719830,
+    "relativePath": "Texture\\副武器\\镭射枪\\镭射枪 未激活.png"
+  },
+  "1840ab84-ee23-4c9f-8da4-f22307d50c8b": {
+    "asset": 1559490649781,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\晶体能源储存度"
+  },
+  "2afa11f2-903f-4f51-88d8-7aa1c618d7a4": {
+    "asset": 1559479023000,
+    "meta": 1559490719924,
+    "relativePath": "Texture\\晶体能源储存度\\晶体能源.png"
+  },
+  "d15e9c2e-f272-4797-8ee4-676ebfb62e4a": {
+    "asset": 1559479023000,
+    "meta": 1559490719924,
+    "relativePath": "Texture\\晶体能源储存度\\进度条1-01.png"
+  },
+  "a7aa6af9-42bc-4e6d-ba47-5683228129ce": {
+    "asset": 1559479023000,
+    "meta": 1559490719940,
+    "relativePath": "Texture\\晶体能源储存度\\进度条3.png"
+  },
+  "320317cd-6419-4949-9b08-8c7ba579b768": {
+    "asset": 1559479023000,
+    "meta": 1559490719940,
+    "relativePath": "Texture\\晶体能源储存度\\进度条2.png"
+  },
+  "877a7efb-09ef-4733-bdb4-762a7d015aa9": {
+    "asset": 1559479023000,
+    "meta": 1559490719955,
+    "relativePath": "Texture\\晶体能源储存度\\进度条4.png"
+  },
+  "eaaedb2d-fdb4-43e1-8ab3-9f1e2cf5e131": {
+    "asset": 1559479023000,
+    "meta": 1559490719955,
+    "relativePath": "Texture\\晶体能源储存度\\进度条5.png"
+  },
+  "38de84f1-b7cd-411d-b575-58f635f8464f": {
+    "asset": 1559496804469,
+    "meta": 1559496804778,
+    "relativePath": "Scene\\main.fire"
+  },
+  "2f8cd376-f5bd-4448-a854-f0bac975b8d0": {
+    "asset": 1559490649562,
+    "meta": 1559479023000,
+    "relativePath": "Scene"
+  },
+  "b5704233-f141-4872-849f-090fb30171d0": {
+    "asset": 1559490649625,
+    "meta": 1559479023000,
+    "relativePath": "Script"
+  },
+  "cb29aae5-244f-4f49-bd20-b895454c2996": {
+    "asset": 1559490649593,
+    "meta": 1559479023000,
+    "relativePath": "Script\\UI脚本"
+  },
+  "6bb3f72d-e5cb-429d-944a-f7947a7dfb29": {
+    "asset": 1559479023000,
+    "meta": 1559490719721,
+    "relativePath": "Texture\\UI\\base\\方框.png"
+  },
+  "bc7f8b82-44cd-4e33-ac2d-1b06d48ec323": {
+    "asset": 1559479023000,
+    "meta": 1559490718428,
+    "relativePath": "Script\\UI脚本\\buttonFunc.js"
+  },
+  "26b607b3-a0e9-4768-ac88-35d2b23b05a1": {
+    "asset": 1559490649750,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\敌人"
+  },
+  "aebff704-dc78-4c65-aa34-93584002fc6c": {
+    "asset": 1559490649718,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\敌人\\投掷机器人"
+  },
+  "5d98f673-dff6-4fd9-aa9b-7c52a71669bf": {
+    "asset": 1559479023000,
+    "meta": 1559490719846,
+    "relativePath": "Texture\\敌人\\投掷机器人\\钛金回旋镖.png"
+  },
+  "1ce76ced-d15c-4c72-92ec-c4465505a7cd": {
+    "asset": 1559479023000,
+    "meta": 1559490719846,
+    "relativePath": "Texture\\敌人\\投掷机器人\\投掷机器人.png"
+  },
+  "b06866ee-cdcb-4e15-a67b-b6f2834cf524": {
+    "asset": 1559490649734,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\敌人\\波动机器人"
+  },
+  "9d723d6f-5efb-4900-a0cc-414ee0937a07": {
+    "asset": 1559479023000,
+    "meta": 1559490719861,
+    "relativePath": "Texture\\敌人\\波动机器人\\波动机器人.png"
+  },
+  "ca369366-0fb5-4b69-bd19-620c783bb338": {
+    "asset": 1559490649734,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\敌人\\深空飞机"
+  },
+  "5b4befc7-7fd6-4660-95c0-f918dbd038d0": {
+    "asset": 1559490649750,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\敌人\\火箭"
+  },
+  "01d6ffd7-934c-408c-9e61-8bdbe6d09d51": {
+    "asset": 1559490649750,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\敌人\\重水飞船"
+  },
+  "cfe734dc-6623-4246-a7bd-00522231b814": {
+    "asset": 1559479023000,
+    "meta": 1559490719908,
+    "relativePath": "Texture\\敌人\\重水飞船\\重水飞船.png"
+  },
+  "2033e125-2d82-417a-9757-45fee0faeee8": {
+    "asset": 1559479023000,
+    "meta": 1559490719893,
+    "relativePath": "Texture\\敌人\\重水飞船\\重水炸弹.png"
+  },
+  "adc687ab-3a6b-404c-a91b-421fd4261727": {
+    "asset": 1559490649765,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\敌人\\飞碟"
+  },
+  "7b349e13-d6ff-454d-9746-048707e6b415": {
+    "asset": 1559479023000,
+    "meta": 1559490719908,
+    "relativePath": "Texture\\敌人\\飞碟\\飞碟.png"
+  },
+  "118c2e56-af16-4dfb-8416-26d3ce33f2c9": {
+    "asset": 1559479023000,
+    "meta": 1559490719908,
+    "relativePath": "Texture\\敌人\\飞碟\\飞碟球.png"
+  },
+  "d7a19abc-b4fb-4b5e-8b33-04520e65444c": {
+    "asset": 1559490649625,
+    "meta": 1559479023000,
+    "relativePath": "Script\\enemyPrefab"
+  },
+  "5211a4f0-a3b2-49ba-9e30-6fff59565417": {
+    "asset": 1559479023000,
+    "meta": 1559490718553,
+    "relativePath": "Script\\UI脚本\\protectScript.js"
+  },
+  "e7fc116f-d9a8-4774-873a-49775cba47fc": {
+    "asset": 1559479023000,
+    "meta": 1559490718521,
+    "relativePath": "Script\\UI脚本\\powerScript.js"
+  },
+  "1ff34636-d75c-4a76-b5ed-a759216cc16f": {
+    "asset": 1559479023000,
+    "meta": 1559490718506,
+    "relativePath": "Script\\UI脚本\\mainWeaponScript.js"
+  },
+  "4c526c1a-c7e3-47d0-ad9d-bca6b5da0f8a": {
+    "asset": 1559490649656,
+    "meta": 1559479023000,
+    "relativePath": "Texture\\bullet"
+  },
+  "8cdb7ae0-6354-4027-9b57-12c48ea0ee53": {
+    "asset": 1559479023000,
+    "meta": 1559490719658,
+    "relativePath": "Texture\\bullet\\bullet2.png"
+  },
+  "86f97152-634d-4bb0-8ee1-dce8affa59ad": {
+    "asset": 1559479023000,
+    "meta": 1559490719494,
+    "relativePath": "Texture\\bullet\\bullet1.png"
+  },
+  "5fc32924-05a4-4694-bb24-c8cefa8f27fa": {
+    "asset": 1559490649562,
+    "meta": 1559479023000,
+    "relativePath": "Prefab"
+  },
+  "95164182-2ee9-4bff-93b2-6f3b2005620c": {
+    "asset": 1559479023000,
+    "meta": 1559490717743,
+    "relativePath": "Prefab\\mainPlane\\bullet1.prefab"
+  },
+  "1815df03-7e0e-4d44-880e-7ed42590c7da": {
+    "asset": 1559479023000,
+    "meta": 1559490717743,
+    "relativePath": "Prefab\\mainPlane\\bullet2.prefab"
+  },
+  "cfd68bad-058c-4b2e-947b-c0d3a241ed8d": {
+    "asset": 1559490649562,
+    "meta": 1559479023000,
+    "relativePath": "Prefab\\mainPlane"
+  },
+  "c22c9534-445e-4bc9-a32b-920afd10bd28": {
+    "asset": 1559490649609,
+    "meta": 1559479023000,
+    "relativePath": "Script\\bullet"
+  },
+  "2e57d1e1-3229-4288-841f-668ef030def8": {
+    "asset": 1559479023000,
+    "meta": 1559490719861,
+    "relativePath": "Texture\\敌人\\波动机器人\\机器波冲击.png"
+  },
+  "0f68f837-dcc4-4634-b609-9aa0c7b17f4c": {
+    "asset": 1559479023000,
+    "meta": 1559490719893,
+    "relativePath": "Texture\\敌人\\火箭\\火箭弹.png"
+  },
+  "3c5f02c3-ceca-4416-a853-1dc8cb12abb9": {
+    "asset": 1559479023000,
+    "meta": 1559490719893,
+    "relativePath": "Texture\\敌人\\火箭\\火箭.png"
+  },
+  "648f575a-65cb-4aa7-b6de-f15b1b2ab19e": {
+    "asset": 1559479023000,
+    "meta": 1559490717993,
+    "relativePath": "Script\\bullet\\mainBullet.js"
+  },
+  "0377ae3e-8dbb-4801-b21d-c4090a63e688": {
+    "asset": 1559479023000,
+    "meta": 1559490718015,
+    "relativePath": "Script\\bullet\\spaceBullet.js"
+  },
+  "140a3c1e-52ab-456d-af6c-173a34e49a96": {
+    "asset": 1559479023000,
+    "meta": 1559490718026,
+    "relativePath": "Script\\bullet\\UFObullet.js"
+  },
+  "1d958d47-e35e-4109-857a-e4093fd493e9": {
+    "asset": 1559479023000,
+    "meta": 1559490718120,
+    "relativePath": "Script\\bullet\\waveRobotBullet.js"
+  },
+  "2b22e3d9-2f72-4ee4-998c-e293203672f3": {
+    "asset": 1559490649547,
+    "meta": 1559479023000,
+    "relativePath": "Prefab\\enemy"
+  },
+  "31515085-454e-43e3-998e-b40b59d3428b": {
+    "asset": 1559490649547,
+    "meta": 1559479023000,
+    "relativePath": "Prefab\\enemyBullet"
+  },
+  "df03612b-08ab-4cbf-80b0-0542b5115d10": {
+    "asset": 1559479023000,
+    "meta": 1559490717743,
+    "relativePath": "Prefab\\enemyBullet\\UFObullet.prefab"
+  },
+  "b8b7c0be-ddac-4aea-a4a0-8346a43701d5": {
+    "asset": 1559479023000,
+    "meta": 1559490717728,
+    "relativePath": "Prefab\\enemy\\enemyUFO.prefab"
+  },
+  "529b3dfb-6311-4a6d-b657-9ce5112d3b84": {
+    "asset": 1559479023000,
+    "meta": 1559490717743,
+    "relativePath": "Prefab\\enemyBullet\\waveRobotBullet.prefab"
+  },
+  "c96f760f-6732-48e1-99a5-c933949c6582": {
+    "asset": 1559479023000,
+    "meta": 1559490717743,
+    "relativePath": "Prefab\\enemy\\waveRobot.prefab"
+  },
+  "731b86a6-deb4-42b4-bdb7-9a2d3e8ad49d": {
+    "asset": 1559479023000,
+    "meta": 1559490717728,
+    "relativePath": "Prefab\\enemy\\rocket.prefab"
+  },
+  "72d46deb-5234-47e8-b396-a93cf2da2d0a": {
+    "asset": 1559479023000,
+    "meta": 1559490719877,
+    "relativePath": "Texture\\敌人\\深空飞机\\深空炸弹.png"
+  },
+  "28c91629-6e7d-4cf9-a3a2-1737f03d8722": {
+    "asset": 1559479023000,
+    "meta": 1559490719877,
+    "relativePath": "Texture\\敌人\\深空飞机\\深空飞机.png"
+  },
+  "5929cedc-ffd2-4609-a2d2-1ad954923316": {
+    "asset": 1559479023000,
+    "meta": 1559490717743,
+    "relativePath": "Prefab\\enemyBullet\\spacePlaneBullet.prefab"
+  },
+  "16f1e7c7-8abd-456f-81e2-f4d58e1b043d": {
+    "asset": 1559479023000,
+    "meta": 1559490717728,
+    "relativePath": "Prefab\\enemy\\spacePlane.prefab"
+  },
+  "c3e908af-d7ab-4c10-bce2-fc2854d4d3c8": {
+    "asset": 1559479023000,
+    "meta": 1559490718213,
+    "relativePath": "Script\\enemyPrefab\\rocket.js"
+  },
+  "1cdfd8da-0e8d-4e29-8f5f-30e1d34862ee": {
+    "asset": 1559479023000,
+    "meta": 1559490718318,
+    "relativePath": "Script\\enemyPrefab\\UFO.js"
+  },
+  "b8da0366-d73c-458d-984c-b75fc20011e7": {
+    "asset": 1559479023000,
+    "meta": 1559490718260,
+    "relativePath": "Script\\enemyPrefab\\spacePlane.js"
+  },
+  "6de9a07b-021b-417d-9772-be6e29b13a41": {
+    "asset": 1559479023000,
+    "meta": 1559490718334,
+    "relativePath": "Script\\enemyPrefab\\waveRobot.js"
+  },
+  "49cd2de0-a72f-44ef-aa6c-07b05f91fc68": {
+    "asset": 1559479023000,
+    "meta": 1559490718490,
+    "relativePath": "Script\\UI脚本\\levelScript.js"
+  },
+  "71561142-4c83-4933-afca-cb7a17f67053": {
+    "asset": 1551778908000,
+    "meta": 1559478974125,
+    "relativePath": "image\\default_btn_disabled.png"
+  },
+  "e851e89b-faa2-4484-bea6-5c01dd9f06e2": {
+    "asset": 1551778908000,
+    "meta": 1559478974125,
+    "relativePath": "image\\default_btn_normal.png"
+  },
+  "b43ff3c2-02bb-4874-81f7-f2dea6970f18": {
+    "asset": 1551778908000,
+    "meta": 1559478974141,
+    "relativePath": "image\\default_btn_pressed.png"
+  },
+  "edd215b9-2796-4a05-aaf5-81f96c9281ce": {
+    "asset": 1551778908000,
+    "meta": 1559478974141,
+    "relativePath": "image\\default_editbox_bg.png"
+  },
+  "d81ec8ad-247c-4e62-aa3c-d35c4193c7af": {
+    "asset": 1551778908000,
+    "meta": 1559478974157,
+    "relativePath": "image\\default_panel.png"
+  },
+  "99170b0b-d210-46f1-b213-7d9e3f23098a": {
+    "asset": 1551778908000,
+    "meta": 1559478974172,
+    "relativePath": "image\\default_progressbar_bg.png"
+  },
+  "cfef78f1-c8df-49b7-8ed0-4c953ace2621": {
+    "asset": 1551778908000,
+    "meta": 1559478974172,
+    "relativePath": "image\\default_progressbar.png"
+  },
+  "567dcd80-8bf4-4535-8a5a-313f1caf078a": {
+    "asset": 1551778908000,
+    "meta": 1559478974188,
+    "relativePath": "image\\default_radio_button_off.png"
+  },
+  "9d60001f-b5f4-4726-a629-2659e3ded0b8": {
+    "asset": 1551778908000,
+    "meta": 1559478974188,
+    "relativePath": "image\\default_radio_button_on.png"
+  },
+  "4bab67cb-18e6-4099-b840-355f0473f890": {
+    "asset": 1551778908000,
+    "meta": 1559478974204,
+    "relativePath": "image\\default_scrollbar_bg.png"
+  },
+  "617323dd-11f4-4dd3-8eec-0caf6b3b45b9": {
+    "asset": 1551778908000,
+    "meta": 1559478974204,
+    "relativePath": "image\\default_scrollbar_vertical_bg.png"
+  },
+  "d6d3ca85-4681-47c1-b5dd-d036a9d39ea2": {
+    "asset": 1551778908000,
+    "meta": 1559478974219,
+    "relativePath": "image\\default_scrollbar_vertical.png"
+  },
+  "0291c134-b3da-4098-b7b5-e397edbe947f": {
+    "asset": 1551778908000,
+    "meta": 1559478974219,
+    "relativePath": "image\\default_scrollbar.png"
+  },
+  "0275e94c-56a7-410f-bd1a-fc7483f7d14a": {
+    "asset": 1551778908000,
+    "meta": 1559478974219,
+    "relativePath": "image\\default_sprite_splash.png"
+  },
+  "6e056173-d285-473c-b206-40a7fff5386e": {
+    "asset": 1551778908000,
+    "meta": 1559478974235,
+    "relativePath": "image\\default_sprite.png"
+  },
+  "73a0903d-d80e-4e3c-aa67-f999543c08f5": {
+    "asset": 1551778908000,
+    "meta": 1559478974235,
+    "relativePath": "image\\default_toggle_checkmark.png"
+  },
+  "c25b9d50-c8fc-4d27-beeb-6e7c1f2e5c0f": {
+    "asset": 1551778908000,
+    "meta": 1559478974250,
+    "relativePath": "image\\default_toggle_disabled.png"
+  },
+  "d29077ba-1627-4a72-9579-7b56a235340c": {
+    "asset": 1551778908000,
+    "meta": 1559478974250,
+    "relativePath": "image\\default_toggle_normal.png"
+  },
+  "2be36297-9abb-4fee-8049-9ed5e271da8a": {
+    "asset": 1551778908000,
+    "meta": 1559478974266,
+    "relativePath": "misc\\default_video.mp4"
+  },
+  "b181c1e4-0a72-4a91-bfb0-ae6f36ca60bd": {
+    "asset": 1551778908000,
+    "meta": 1559478974250,
+    "relativePath": "image\\default_toggle_pressed.png"
+  },
+  "b8223619-7e38-47c4-841f-9160c232495a": {
+    "asset": 1551778908000,
+    "meta": 1559478974391,
+    "relativePath": "obsolete\\atom.plist"
+  },
+  "b2687ac4-099e-403c-a192-ff477686f4f5": {
+    "asset": 1551778908000,
+    "meta": 1559478974391,
+    "relativePath": "particle\\atom.plist"
+  },
+  "8a96b965-2dc0-4e03-aa90-3b79cb93b5b4": {
+    "asset": 1551778908000,
+    "meta": 1559478974282,
+    "relativePath": "obsolete\\atom.png"
+  },
+  "d0a82d39-bede-46c4-b698-c81ff0dedfff": {
+    "asset": 1551778908000,
+    "meta": 1559478974297,
+    "relativePath": "particle\\atom.png"
+  },
+  "972b9a4d-47ee-4c74-b5c3-61d8a69bc29f": {
+    "asset": 1551778908000,
+    "meta": 1559478974282,
+    "relativePath": "prefab\\button.prefab"
+  },
+  "2c937608-2562-40ea-b264-7395df6f0cea": {
+    "asset": 1551778908000,
+    "meta": 1559478974282,
+    "relativePath": "prefab\\canvas.prefab"
+  },
+  "61aeb05b-3b32-452b-8eed-2b76deeed554": {
+    "asset": 1551778908000,
+    "meta": 1559478974297,
+    "relativePath": "prefab\\editbox.prefab"
+  },
+  "27756ebb-3d33-44b0-9b96-e858fadd4dd4": {
+    "asset": 1551778908000,
+    "meta": 1559478974297,
+    "relativePath": "prefab\\label.prefab"
+  },
+  "785a442c-3ceb-45be-a46e-7317f625f3b9": {
+    "asset": 1551778908000,
+    "meta": 1559478974297,
+    "relativePath": "prefab\\layout.prefab"
+  },
+  "ca8401fe-ad6e-41a8-bd46-8e3e4e9945be": {
+    "asset": 1551778908000,
+    "meta": 1559478974297,
+    "relativePath": "prefab\\pageview.prefab"
+  },
+  "cd33edea-55f5-46c2-958d-357a01384a36": {
+    "asset": 1551778908000,
+    "meta": 1559478974313,
+    "relativePath": "prefab\\particlesystem.prefab"
+  },
+  "5965ffac-69da-4b55-bcde-9225d0613c28": {
+    "asset": 1551778908000,
+    "meta": 1559478974313,
+    "relativePath": "prefab\\progressBar.prefab"
+  },
+  "4a37dd57-78cd-4cec-aad4-f11a73d12b63": {
+    "asset": 1551778908000,
+    "meta": 1559478974313,
+    "relativePath": "prefab\\richtext.prefab"
+  },
+  "32044bd2-481f-4cf1-a656-e2b2fb1594eb": {
+    "asset": 1551778908000,
+    "meta": 1559478974313,
+    "relativePath": "prefab\\scrollview.prefab"
+  },
+  "0004d1cf-a0ad-47d8-ab17-34d3db9d35a3": {
+    "asset": 1551778908000,
+    "meta": 1559478974313,
+    "relativePath": "prefab\\slider.prefab"
+  },
+  "1f55e3be-b89b-4b79-88de-47fd31018044": {
+    "asset": 1551778908000,
+    "meta": 1559478974328,
+    "relativePath": "prefab\\sprite_splash.prefab"
+  },
+  "96083d03-c332-4a3f-9386-d03e2d19e8ee": {
+    "asset": 1551778908000,
+    "meta": 1559478974328,
+    "relativePath": "prefab\\sprite.prefab"
+  },
+  "7de03a80-4457-438d-95a7-3e7cdffd6086": {
+    "asset": 1551778908000,
+    "meta": 1559478974328,
+    "relativePath": "prefab\\tiledmap.prefab"
+  },
+  "0e42ba95-1fa1-46aa-b2cf-143cd1bcee2c": {
+    "asset": 1551778908000,
+    "meta": 1559478974328,
+    "relativePath": "prefab\\tiledtile.prefab"
+  },
+  "0d784963-d024-4ea6-a7db-03be0ad63010": {
+    "asset": 1551778908000,
+    "meta": 1559478974344,
+    "relativePath": "prefab\\toggle.prefab"
+  },
+  "bf0a434c-84dd-4a8e-a08a-7a36f180cc75": {
+    "asset": 1551778908000,
+    "meta": 1559478974344,
+    "relativePath": "prefab\\toggleContainer.prefab"
+  },
+  "d1b8be49-b0a0-435c-83b7-552bed4bbe35": {
+    "asset": 1551778908000,
+    "meta": 1559478974344,
+    "relativePath": "prefab\\toggleGroup.prefab"
+  },
+  "232d2782-c4bd-4bb4-9e01-909f03d6d3b9": {
+    "asset": 1551778908000,
+    "meta": 1559478974344,
+    "relativePath": "prefab\\videoplayer.prefab"
+  },
+  "8c5001fd-07ee-4a4b-a8a0-63e15195e94d": {
+    "asset": 1551778908000,
+    "meta": 1559478974344,
+    "relativePath": "prefab\\webview.prefab"
+  },
+  "69df0abc-39f1-4748-bf7b-f85a43d78545": {
+    "asset": 1559479023000,
+    "meta": 1559490718443,
+    "relativePath": "Script\\UI脚本\\coinScript.js"
+  },
+  "5835b2c3-56a1-4b73-bfa1-db9746782e56": {
+    "asset": 1559491852061,
+    "meta": 1559491853628,
+    "relativePath": "Script\\UI脚本\\strengthScript.js"
+  },
+  "53f80463-e3fa-4e29-bedd-44d889102a5e": {
+    "asset": 1559494390973,
+    "meta": 1559494393218,
+    "relativePath": "Script\\mainPlane.js"
+  },
+  "fdaaf788-7bbb-4ea7-94df-e7b96a4b49d7": {
+    "asset": 1559494597791,
+    "meta": 1559494601386,
+    "relativePath": "Script\\enemyControl.js"
+  },
+  "699e9c18-9d88-4e78-9d4a-e06fabc5161e": {
+    "asset": 1559496613420,
+    "meta": 1559496643869,
+    "relativePath": "Script\\UI脚本\\subWeaponScript.js"
+  },
+  "37858e2d-17ef-4306-8415-d2cfb7bee3c4": {
+    "asset": 1559496722670,
+    "meta": 1559496723910,
+    "relativePath": "Script\\gameControl.js"
+  }
+}

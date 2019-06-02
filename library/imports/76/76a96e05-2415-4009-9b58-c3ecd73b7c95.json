@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "镭射枪 激活",
+    "texture": "dff11ffe-7196-489f-964b-41696772a8ea",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      200,
+      175
+    ],
+    "offset": [
+      -14.5,
+      12.5
+    ],
+    "originalSize": [
+      229,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

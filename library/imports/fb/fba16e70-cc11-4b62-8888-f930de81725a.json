@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "电浆炮 激活",
+    "texture": "93e1a75b-2141-4f37-a91c-f6c2c0dd6b9f",
+    "atlas": "",
+    "rect": [
+      23,
+      5,
+      166,
+      186
+    ],
+    "offset": [
+      6,
+      2
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

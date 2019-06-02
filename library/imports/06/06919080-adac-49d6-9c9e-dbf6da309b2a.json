@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "机器波冲击",
+    "texture": "2e57d1e1-3229-4288-841f-668ef030def8",
+    "atlas": "",
+    "rect": [
+      0,
+      46,
+      200,
+      103
+    ],
+    "offset": [
+      0,
+      2.5
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

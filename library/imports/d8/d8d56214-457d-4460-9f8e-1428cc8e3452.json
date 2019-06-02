@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "粒子枪 未激活",
+    "texture": "76e15ca5-d124-45d4-9e2a-e12b771f3957",
+    "atlas": "",
+    "rect": [
+      0,
+      42,
+      200,
+      125
+    ],
+    "offset": [
+      0,
+      -4.5
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

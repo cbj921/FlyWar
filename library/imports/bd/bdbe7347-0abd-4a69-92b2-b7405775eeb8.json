@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "投掷机器人",
+    "texture": "1ce76ced-d15c-4c72-92ec-c4465505a7cd",
+    "atlas": "",
+    "rect": [
+      34,
+      10,
+      128,
+      179
+    ],
+    "offset": [
+      -2,
+      0.5
+    ],
+    "originalSize": [
+      200,
+      200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
