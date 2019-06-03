@@ -272,7 +272,7 @@ cc.Class({
     laserBulletAction: function laserBulletAction(bulletNode, offset) {
         var _this5 = this;
 
-        var duration = (1100 - this.node.y) / 800; // 计算时间，这样不管在哪个位置发射子弹速度都一样了
+        var duration = (1100 - this.node.y) / 1000; // 计算时间，这样不管在哪个位置发射子弹速度都一样了
         var backAction = cc.moveBy(0.5, cc.v2(0, -50)); // 往后退的动作
         this.moveAction = cc.moveTo(duration, cc.v2(this.node.x + offset, 1100)); // 初始位置是0
         this.finished = cc.callFunc(function () {

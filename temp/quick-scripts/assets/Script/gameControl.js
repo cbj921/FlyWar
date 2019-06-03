@@ -38,6 +38,7 @@ cc.Class({
     },
     initData: function initData() {
         this.getCollisionManager(); // 开启碰撞检测
+        this.coinScript.init();
         this.mainPlane.initData();
         this.subWeaponButton.initData();
     },

@@ -1,65 +1,126 @@
-2019-06-03T04:18:07.240Z - normal: Load ~/.CocosCreator/settings.json
-2019-06-03T04:18:08.380Z - normal: Initializing Asset Database
-2019-06-03T04:18:08.385Z - normal: checking language setting...
-2019-06-03T04:18:08.385Z - normal: Language: zh
-2019-06-03T04:18:09.179Z - success: preview server running at http://localhost:7456
-2019-06-03T04:18:09.181Z - success: protocol editor-framework registered
-2019-06-03T04:18:09.181Z - success: protocol app registered
-2019-06-03T04:18:09.181Z - success: protocol theme registered
-2019-06-03T04:18:09.181Z - success: protocol packages registered
-2019-06-03T04:18:09.182Z - success: protocol uuid registerred
-2019-06-03T04:18:09.182Z - success: protocol db registerred
-2019-06-03T04:18:09.182Z - success: protocol thumbnail registerred
-2019-06-03T04:18:09.182Z - success: protocol unpack registerred
-2019-06-03T04:18:09.182Z - success: protocol disable-commonjs registerred
-2019-06-03T04:18:09.387Z - normal: connected!
-2019-06-03T04:18:09.389Z - normal: Check project D:\CocosProject\FlyWar-master
-2019-06-03T04:18:09.391Z - normal: Initializing project D:\CocosProject\FlyWar-master
-2019-06-03T04:18:09.859Z - normal: Initializing Cocos2d
-2019-06-03T04:18:10.701Z - normal: Initializing engine extends
-2019-06-03T04:18:10.721Z - success: asset-db-debugger loaded
-2019-06-03T04:18:10.723Z - success: baidu-adapter loaded
-2019-06-03T04:18:10.725Z - success: code-editor loaded
-2019-06-03T04:18:10.726Z - success: color-picker loaded
-2019-06-03T04:18:10.825Z - success: fb-audience-network loaded
-2019-06-03T04:18:10.892Z - success: fb-live-stream loaded
-2019-06-03T04:18:10.898Z - success: google-play-instant loaded
-2019-06-03T04:18:10.903Z - success: huawei-runtime loaded
-2019-06-03T04:18:10.904Z - success: jsb-adapter loaded
-2019-06-03T04:18:10.909Z - success: oppo-runtime loaded
-2019-06-03T04:18:10.913Z - success: package-manager loaded
-2019-06-03T04:18:11.050Z - success: qqplay-adapter loaded
-2019-06-03T04:18:11.052Z - success: runtime-dev-tools loaded
-2019-06-03T04:18:11.056Z - success: sdkbox loaded
-2019-06-03T04:18:11.060Z - success: tester loaded
-2019-06-03T04:18:11.063Z - success: ui-grid loaded
-2019-06-03T04:18:11.065Z - success: ui-kit-preview-extra loaded
-2019-06-03T04:18:11.066Z - success: ui-kit-preview loaded
-2019-06-03T04:18:11.068Z - success: ui-kit loaded
-2019-06-03T04:18:11.071Z - success: ui-tree loaded
-2019-06-03T04:18:11.075Z - success: vivo-runtime loaded
-2019-06-03T04:18:11.077Z - success: weapp-adapter loaded
-2019-06-03T04:18:11.122Z - success: assets loaded
-2019-06-03T04:18:11.124Z - success: builder loaded
-2019-06-03T04:18:11.436Z - success: cocos-services loaded
-2019-06-03T04:18:11.439Z - success: console loaded
-2019-06-03T04:18:11.477Z - success: fb-instant-games loaded
-2019-06-03T04:18:11.478Z - success: google-instant-games loaded
-2019-06-03T04:18:11.483Z - success: hierarchy loaded
-2019-06-03T04:18:11.486Z - success: inspector loaded
-2019-06-03T04:18:11.487Z - success: keystore loaded
-2019-06-03T04:18:11.491Z - success: node-library loaded
-2019-06-03T04:18:11.493Z - success: package-asset loaded
-2019-06-03T04:18:11.494Z - success: preferences loaded
-2019-06-03T04:18:11.495Z - success: project-exporter loaded
-2019-06-03T04:18:11.498Z - success: project-importer loaded
-2019-06-03T04:18:11.501Z - success: project-settings loaded
-2019-06-03T04:18:11.504Z - success: scene loaded
-2019-06-03T04:18:11.506Z - success: simulator-debugger loaded
-2019-06-03T04:18:11.508Z - success: sprite-editor loaded
-2019-06-03T04:18:11.512Z - success: store loaded
-2019-06-03T04:18:11.517Z - success: timeline loaded
-2019-06-03T04:18:13.119Z - normal: Loading packages
-2019-06-03T04:18:13.127Z - normal: Watching packages
-2019-06-03T04:18:13.792Z - info: Cocos Services load base data!
-2019-06-03T04:18:13.832Z - normal: Run Application
+2019-06-03T06:17:22.432Z - normal: Load ~/.CocosCreator/settings.json
+2019-06-03T06:17:23.605Z - normal: Initializing Asset Database
+2019-06-03T06:17:23.605Z - normal: checking language setting...
+2019-06-03T06:17:23.605Z - normal: Language: zh
+2019-06-03T06:17:24.382Z - success: preview server running at http://localhost:7456
+2019-06-03T06:17:24.382Z - success: protocol editor-framework registered
+2019-06-03T06:17:24.382Z - success: protocol app registered
+2019-06-03T06:17:24.382Z - success: protocol theme registered
+2019-06-03T06:17:24.382Z - success: protocol packages registered
+2019-06-03T06:17:24.391Z - success: protocol uuid registerred
+2019-06-03T06:17:24.391Z - success: protocol db registerred
+2019-06-03T06:17:24.391Z - success: protocol thumbnail registerred
+2019-06-03T06:17:24.391Z - success: protocol unpack registerred
+2019-06-03T06:17:24.391Z - success: protocol disable-commonjs registerred
+2019-06-03T06:17:24.802Z - normal: connected!
+2019-06-03T06:17:24.802Z - normal: Check project D:\CocosProject\FlyWar-master
+2019-06-03T06:17:24.806Z - normal: Initializing project D:\CocosProject\FlyWar-master
+2019-06-03T06:17:25.245Z - normal: Initializing Cocos2d
+2019-06-03T06:17:26.046Z - normal: Initializing engine extends
+2019-06-03T06:17:26.061Z - success: asset-db-debugger loaded
+2019-06-03T06:17:26.061Z - success: baidu-adapter loaded
+2019-06-03T06:17:26.071Z - success: code-editor loaded
+2019-06-03T06:17:26.071Z - success: color-picker loaded
+2019-06-03T06:17:26.166Z - success: fb-audience-network loaded
+2019-06-03T06:17:26.231Z - success: fb-live-stream loaded
+2019-06-03T06:17:26.231Z - success: google-play-instant loaded
+2019-06-03T06:17:26.241Z - success: huawei-runtime loaded
+2019-06-03T06:17:26.241Z - success: jsb-adapter loaded
+2019-06-03T06:17:26.241Z - success: oppo-runtime loaded
+2019-06-03T06:17:26.252Z - success: package-manager loaded
+2019-06-03T06:17:26.385Z - success: qqplay-adapter loaded
+2019-06-03T06:17:26.385Z - success: runtime-dev-tools loaded
+2019-06-03T06:17:26.392Z - success: sdkbox loaded
+2019-06-03T06:17:26.392Z - success: tester loaded
+2019-06-03T06:17:26.392Z - success: ui-grid loaded
+2019-06-03T06:17:26.401Z - success: ui-kit-preview-extra loaded
+2019-06-03T06:17:26.401Z - success: ui-kit-preview loaded
+2019-06-03T06:17:26.401Z - success: ui-kit loaded
+2019-06-03T06:17:26.401Z - success: ui-tree loaded
+2019-06-03T06:17:26.411Z - success: vivo-runtime loaded
+2019-06-03T06:17:26.411Z - success: weapp-adapter loaded
+2019-06-03T06:17:26.456Z - success: assets loaded
+2019-06-03T06:17:26.456Z - success: builder loaded
+2019-06-03T06:17:26.744Z - success: cocos-services loaded
+2019-06-03T06:17:26.752Z - success: console loaded
+2019-06-03T06:17:26.782Z - success: fb-instant-games loaded
+2019-06-03T06:17:26.782Z - success: google-instant-games loaded
+2019-06-03T06:17:26.795Z - success: hierarchy loaded
+2019-06-03T06:17:26.795Z - success: inspector loaded
+2019-06-03T06:17:26.795Z - success: keystore loaded
+2019-06-03T06:17:26.802Z - success: node-library loaded
+2019-06-03T06:17:26.802Z - success: package-asset loaded
+2019-06-03T06:17:26.802Z - success: preferences loaded
+2019-06-03T06:17:26.802Z - success: project-exporter loaded
+2019-06-03T06:17:26.812Z - success: project-importer loaded
+2019-06-03T06:17:26.812Z - success: project-settings loaded
+2019-06-03T06:17:26.812Z - success: scene loaded
+2019-06-03T06:17:26.821Z - success: simulator-debugger loaded
+2019-06-03T06:17:26.823Z - success: sprite-editor loaded
+2019-06-03T06:17:26.830Z - success: store loaded
+2019-06-03T06:17:26.830Z - success: timeline loaded
+2019-06-03T06:17:27.430Z - info: Cocos Services load base data!
+2019-06-03T06:17:28.365Z - normal: Loading packages
+2019-06-03T06:17:28.371Z - normal: Watching packages
+2019-06-03T06:17:29.075Z - normal: Run Application
+2019-06-03T06:22:57.806Z - normal: Simulator: SCREEN DPI = 96, SCREEN SCALE = 1.00
+2019-06-03T06:22:57.808Z - normal: Simulator: WORKAREA WIDTH 1528.00, HEIGHT 773.00
+2019-06-03T06:22:57.808Z - normal: Simulator: FRAME SCALE = 1.00
+2019-06-03T06:22:58.054Z - normal: Simulator: Ready for GLSL
+2019-06-03T06:22:58.054Z - normal: Simulator: Ready for OpenGL 2.0
+2019-06-03T06:22:58.062Z - normal: Simulator: Project Config:
+2019-06-03T06:22:58.062Z - normal: Simulator:     project dir: D:\CocosCreater\CocosCreator\resources\cocos2d-x\simulator\win32\
+2019-06-03T06:22:58.062Z - normal: Simulator:     writable path: $(PROJDIR)\
+2019-06-03T06:22:58.062Z - normal: Simulator:     script file: $(PROJDIR)\main.js
+2019-06-03T06:22:58.063Z - normal: Simulator:     frame size: 1334 x 750
+2019-06-03T06:22:58.063Z - normal: Simulator:     frame scale: 1.00
+2019-06-03T06:22:58.063Z - normal: Simulator:     show console: NO
+2019-06-03T06:22:58.064Z - normal: Simulator:     write debug log: NO ()
+2019-06-03T06:22:58.064Z - normal: Simulator:     listen: 
+2019-06-03T06:22:58.064Z - normal: Simulator:     debugger: none
+2019-06-03T06:22:58.064Z - normal: Simulator:     add searching path:
+2019-06-03T06:22:58.065Z - normal: Simulator: 
+2019-06-03T06:22:58.065Z - normal: Simulator: 
+2019-06-03T06:22:58.065Z - normal: Simulator: 
+2019-06-03T06:22:58.065Z - normal: Simulator: resetDesignResolution request
+2019-06-03T06:22:58.065Z - normal: Simulator: ------------------------------------------------
+2019-06-03T06:22:58.065Z - normal: Simulator: LOAD Js FILE: jsb-adapter/jsb-builtin.js
+2019-06-03T06:22:58.065Z - normal: Simulator: ------------------------------------------------
+2019-06-03T06:22:58.066Z - normal: Simulator: D/jswrapper (368): Initializing V8, version: 6.0.286.52
+2019-06-03T06:22:58.362Z - normal: Simulator: D/jswrapper (813): libuv version: 1.13.1
+2019-06-03T06:22:58.363Z - normal: Simulator: D/jswrapper (112): Debugger listening..., visit [ chrome-devtools://devtools/bundled/inspector.html?v8only=true&ws=0.0.0.0:5086/00010002-0003-4004-8005-000600070008 ] in chrome browser to debug!
+2019-06-03T06:22:58.364Z - normal: Simulator: D/jswrapper (115): For help see https://nodejs.org/en/docs/inspector
+2019-06-03T06:22:58.413Z - normal: Simulator: D/jswrapper (129): JS: Enable batch GL commands optimization!
+2019-06-03T06:22:58.415Z - normal: Simulator: resetDesignResolution request
+2019-06-03T06:22:58.415Z - normal: Simulator: ------------------------------------------------
+2019-06-03T06:22:58.415Z - normal: Simulator: LOAD Js FILE: main.js
+2019-06-03T06:22:58.416Z - normal: Simulator: ------------------------------------------------
+2019-06-03T06:22:58.819Z - normal: Simulator: iShow!
+2019-06-03T06:22:58.852Z - normal: Simulator: D/jswrapper (4159): glGetIntegerv: pname: 0x8b4c
+2019-06-03T06:22:58.866Z - normal: Simulator: D/jswrapper (129): JS: Cocos Creator v2.0.9
+2019-06-03T06:23:02.619Z - error: Simulator: E/jswrapper (271): ERROR: Uncaught TypeError: Cannot read property 'grainGun' of undefined, location: assets/Script/UI脚本/subWeaponScript.js:0:0
+STACK:
+[0]setGrainData@assets/Script/UI脚本/subWeaponScript.js:43
+[1]popUpgradeWindow@assets/Script/UI脚本/subWeaponScript.js:32
+[2]emit@src/cocos2d-jsb.js:13427
+[3]emitEvents@src/cocos2d-jsb.js:13410
+[4]_onTouchEnded@src/cocos2d-jsb.js:12998
+[5]174.CallbacksInvoker.invoke@src/cocos2d-jsb.js:28779
+[6]_doDispatchEvent@src/cocos2d-jsb.js:7846
+[7]dispatchEvent@src/cocos2d-jsb.js:8497
+[8]_touchEndHandler@src/cocos2d-jsb.js:7738
+[9]_onTouchEventCallback@src/cocos2d-jsb.js:19859
+[10]_dispatchEventToListeners@src/cocos2d-jsb.js:19943
+[11]_dispatchTouchEvent@src/cocos2d-jsb.js:19892
+[12]dispatchEvent@src/cocos2d-jsb.js:20165
+[13]handleTouchesEnd@src/cocos2d-jsb.js:26810
+[14]anonymous@src/cocos2d-jsb.js:26983
+[15]anonymous@src/cocos2d-jsb.js:27003
+[16]dispatchEvent@jsb-adapter/jsb-builtin.js:2805
+[17]anonymous@jsb-adapter/jsb-builtin.js:2876
+E/jswrapper (534): [ERROR] (..\cocos\scripting\js-bindings\jswrapper\v8\Object.cpp, 534): Invoking function (15D25D60) failed!
+    at HTMLElement.print-simulator-log (D:\CocosCreater\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene.js:1:1501)
+    at Object.e._dispatch (D:\CocosCreater\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (D:\CocosCreater\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
