@@ -16,7 +16,10 @@ cc.Class({
         startPower: 0,
         healthBar: cc.ProgressBar,
         bullet: [cc.Prefab],
+        grainGunBullet:cc.Prefab,
+        laserGunBullet:cc.Prefab,
         strengthLabel:cc.Node,
+        powerBar:cc.ProgressBar,
 
         //enemyScript:require('enemyControl'),
     },
@@ -69,6 +72,7 @@ cc.Class({
             this.mainPlaneObject = JSON.parse(cc.sys.localStorage.getItem("mainPlaneObject")); // 获取全局对象
         } // 初始化数据
         this.varHealth = this.mainPlaneObject.protect.number; // 因为血量在游戏的时候会一直变化，所以用一个中间值来在游戏中进行改变
+        this.powerNumber = this.mainPlaneObject.power.number; // 能量同理
     },
 
     startFly() {
@@ -76,6 +80,7 @@ cc.Class({
         let flyAction = cc.moveTo(1, cc.v2(0, this.endPosY)).easing(cc.easeCubicActionOut());
         this.node.runAction(flyAction);
         this.initHealthBar();
+        this.initPowerBar();//初始化能量条
         this.registerPlaneControlEvent();
         this.creatBullet();
         this.getAllEnemyData(); // 获取所有敌人数据
@@ -132,11 +137,33 @@ cc.Class({
             this.failEvent();
         }
     },
+
     failEvent() {
         this.initHealthBar();// 让血回满，就不会一直发射事件
         this.strengthLabel.emit('fail');// 给strengthLabel发送失败事件
         this.Canvas.emit("fail"); // 给canvas 发送失败事件
         this.unschedule(this.bulletCallback);// 关闭子弹发射
+    },
+
+    initPowerBar(){
+        this.powerNumber = this.mainPlaneObject.power.number; 
+        this.powerBar.progress = 1;
+    },
+    updatePowerBar(){
+        // 更新能量条
+        let ratio = this.powerNumber / this.mainPlaneObject.power.number;
+        this.powerBar.progress = ratio;
+    },
+    // 副武器按键函数
+    useGrainGun(){
+        if(this.powerNumber>=this.mainPlaneObject.subWeapon.grainGun.powerCost){
+            this.powerNumber -= this.mainPlaneObject.subWeapon.grainGun.powerCost;
+        }
+    },
+    useLaserGun(){
+        if(this.powerNumber>=this.mainPlaneObject.subWeapon.laserGun.powerCost){
+            this.powerNumber -= this.mainPlaneObject.subWeapon.laserGun.powerCost;
+        }
     },
 
     getAllEnemyData() {
@@ -252,6 +279,7 @@ cc.Class({
     update(dt) {
         this.updatePlanePos(dt);// 更新飞机位置
         this.updateHealthBar();// 更新血条
+        this.updatePowerBar();// 更新能量条
     },
 
     onLoad() {

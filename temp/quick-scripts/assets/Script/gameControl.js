@@ -23,7 +23,10 @@ cc.Class({
         mainPlane: require("mainPlane"),
         enemyControl: require('enemyControl'),
         levelScript: require('levelScript'),
-        startButton: cc.Node
+        startButton: cc.Node,
+        grainGunBtn: cc.Node,
+        laserGunBtn: cc.Node,
+        powerBar: cc.Node
     },
 
     init: function init() {
@@ -60,6 +63,9 @@ cc.Class({
         this.subWeaponButton.hideIcon();
         this.strengthScript.hideIcon();
         this.coinScript.closeCoinSelfGrow(); // 关闭金币自增长
+        this.powerBar.active = true;
+        this.grainGunBtn.active = true;
+        this.laserGunBtn.active = true;
     },
     showIcon: function showIcon() {
         this.startButton.active = true;
@@ -73,6 +79,9 @@ cc.Class({
         this.mainWeaponButton.showIcon();
         this.subWeaponButton.showIcon();
         this.levelScript.initLevelData();
+        this.powerBar.active = false;
+        this.grainGunBtn.active = false;
+        this.laserGunBtn.active = false;
     },
     hideUpgradeBg: function hideUpgradeBg() {
         this.protectButton.hideUpgradeBg();
