@@ -94,6 +94,13 @@ cc.Class({
         // 通关失败后的回调函数
         this.mainPlane.init();
         this.enemyControl.popFailButton();
+        cc.log('fail');
+    },
+    succeedBack: function succeedBack() {
+        this.levelScript.updateLevelData();
+        this.mainPlane.succeedEvent();
+        this.init();
+        cc.log('succeed');
     },
 
 
@@ -103,6 +110,7 @@ cc.Class({
         this.initData();
         this.init();
         this.node.on("fail", this.failBack, this);
+        this.node.on('succeed', this.succeedBack, this);
         //cc.sys.localStorage.removeItem('coinData');
         //cc.sys.localStorage.removeItem('UFOObject');
         //cc.sys.localStorage.removeItem('mainPlaneObject');

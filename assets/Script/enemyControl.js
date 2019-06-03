@@ -39,6 +39,10 @@ cc.Class({
         };
         this.schedule(this.makeEnemy, 2, enemyNumber);
     },
+    creatEnemy(){
+        // 创建敌人
+        let enemyNumber = this.levelData.enemyNumber; // 获得敌人数量
+    },
 
     succeedEventEmit() {
         this.enemyArray.map((item) => {
@@ -50,7 +54,6 @@ cc.Class({
         if ((this.makeDoneFlag == this.levelData.enemyNumber) && (this.enemyArray.length == 0)) {
             this.node.emit("succeed");
             this.makeDoneFlag = -1;
-            cc.log('succeed');
         }
     },
 

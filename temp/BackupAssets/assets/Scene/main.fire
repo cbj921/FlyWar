@@ -56,8 +56,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.34822022531844976,
-      "y": 0.34822022531844976,
+      "x": 0.42870938501451755,
+      "y": 0.42870938501451755,
       "z": 1
     },
     "_quat": {
@@ -11204,6 +11204,9 @@
     "clickEvents": [
       {
         "__id__": 270
+      },
+      {
+        "__id__": 271
       }
     ],
     "_N$interactable": true,
@@ -11283,6 +11286,16 @@
     "component": "",
     "_componentId": "fdaafeIe7tOp5Tf57lqS0nX",
     "handler": "clearAllEnemy",
+    "customEventData": ""
+  },
+  {
+    "__type__": "cc.ClickEvent",
+    "target": {
+      "__id__": 2
+    },
+    "component": "",
+    "_componentId": "378584tF+9DBoQV0s+3vuPE",
+    "handler": "init",
     "customEventData": ""
   }
 ]

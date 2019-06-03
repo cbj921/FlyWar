@@ -43,6 +43,10 @@ cc.Class({
         };
         this.schedule(this.makeEnemy, 2, enemyNumber);
     },
+    creatEnemy: function creatEnemy() {
+        // 创建敌人
+        var enemyNumber = this.levelData.enemyNumber; // 获得敌人数量
+    },
     succeedEventEmit: function succeedEventEmit() {
         var _this2 = this;
 
@@ -55,7 +59,6 @@ cc.Class({
         if (this.makeDoneFlag == this.levelData.enemyNumber && this.enemyArray.length == 0) {
             this.node.emit("succeed");
             this.makeDoneFlag = -1;
-            cc.log('succeed');
         }
     },
     popFailButton: function popFailButton() {

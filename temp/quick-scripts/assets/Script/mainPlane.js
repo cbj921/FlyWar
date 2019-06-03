@@ -149,7 +149,12 @@ cc.Class({
         this.initHealthBar(); // 让血回满，就不会一直发射事件
         this.strengthLabel.emit('fail'); // 给strengthLabel发送失败事件
         this.Canvas.emit("fail"); // 给canvas 发送失败事件
-        this.unschedule(this.bulletCallback); // 关闭子弹发射
+        this.unscheduleAllCallbacks(); // 关闭所有子弹发射
+    },
+    succeedEvent: function succeedEvent() {
+        this.offTouchEventRegister();
+        this.isMoving = 0; // 让移动标志位为0,如果不这样，飞机归位后还会飞出来
+        this.unscheduleAllCallbacks(); // 关闭所有子弹发射
     },
     initPowerBar: function initPowerBar() {
         this.powerNumber = this.mainPlaneObject.power.number;
