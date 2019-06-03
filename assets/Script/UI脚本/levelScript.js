@@ -66,7 +66,6 @@ cc.Class({
             }
         }
         cc.sys.localStorage.setItem("levelData", JSON.stringify(this.levelData));
-        cc.log(this.levelData);
     },
 
     onLoad () {

@@ -68,7 +68,6 @@ cc.Class({
             };
         }
         cc.sys.localStorage.setItem("levelData", JSON.stringify(this.levelData));
-        cc.log(this.levelData);
     },
     onLoad: function onLoad() {
         this.initLevelData(); //初始化关卡数据

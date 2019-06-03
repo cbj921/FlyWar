@@ -2,7 +2,7 @@
 cc._RF.push(module, 'fdaafeIe7tOp5Tf57lqS0nX', 'enemyControl');
 // Script/enemyControl.js
 
-"use strict";
+'use strict';
 
 cc.Class({
     extends: cc.Component,
@@ -29,41 +29,145 @@ cc.Class({
         this.makeDoneFlag = -1; // 有点奇怪初始值为-1，这个变量为标志位，当它的值等于敌人的数量时，说明敌人的生成已经完成
         this.enemyArray = [];
         this.failButton.active = false; // 初始让失败按钮不可见
+        this.enemyNumberBar.node.active = false; //初始让敌人条不可见
     },
     startGame: function startGame() {
         var _this = this;
 
+        this.gameState = 1; // 游戏开始的标记
         var enemyNumber = this.levelData.enemyNumber; // 获得敌人数量
+        this.remainEnemy = this.levelData.enemyNumber; // 让剩余敌人的变量等于初始人数
+        /********************************************/
+        this.UFOTotalNumber = Math.floor(this.levelData.enemyNumber * this.levelData.enmeyProportion.UFOProportion); //生成总的UFO数量
+        this.makeUFOEnemyNumber = 0; // 这个用来计数生成的UFO数量
 
+        this.rocketTotalNumber = Math.floor(this.levelData.enemyNumber * this.levelData.enmeyProportion.rocketProportion); //生成总的rocket数量
+        this.makeRocketEnemyNumber = 0; // 这个用来计数生成的rocket数量
+
+        this.waveRobotTotalNumber = Math.floor(this.levelData.enemyNumber * this.levelData.enmeyProportion.waveRobotProportion); //生成总的wave数量
+        this.makeWaveRobotEnemyNumber = 0; // 这个用来计数生成的wave数量
+
+        this.spacePlaneTotalNumber = Math.floor(this.levelData.enemyNumber * this.levelData.enmeyProportion.spacePlaneProportion);
+        this.makeSpacePlaneEnemyNumber = 0;
+
+        this.throwRobotTotalNumber = Math.floor(this.levelData.enemyNumber * this.levelData.enmeyProportion.throwRobotProportion);
+        this.makeThrowRobotEnemyNumber = 0;
+
+        this.heavyPlaneTotalNumber = Math.floor(this.levelData.enemyNumber * this.levelData.enmeyProportion.heavyPlaneProportion);
+        this.makeHeavyPlaneEnemyNumber = 0;
+        /********************************************/
+        ///以下用创建敌人函数代替
         this.makeEnemy = function () {
-            var enemy = cc.instantiate(_this.UFOPrefab);
-            enemy.parent = _this.node;
-            _this.enemyArray.push(enemy);
-            _this.makeDoneFlag += 1;
+            var enemyFlag = _this.randomEnemy(); //获取到随机生成的敌人
+            if (enemyFlag == 'UFO') {
+                _this.creatUFOEnemy();
+                _this.makeDoneFlag++;
+            }
+            if (enemyFlag == 'rocket') {
+                _this.creatRocketEnemy();
+                _this.makeDoneFlag++;
+            }
+            if (enemyFlag == 'waveRobot') {
+                _this.creatWaveRobotEnemy();
+                _this.makeDoneFlag++;
+            }
+            if (enemyFlag == 'spacePlane') {
+                _this.creatSpacePlaneEnemy();
+                _this.makeDoneFlag++;
+            }
+            if (enemyFlag == 'throwRobot') {
+                _this.creatThrowRobotEnemy();
+                _this.makeDoneFlag++;
+            }
+            if (enemyFlag = 'heavyWaterPlane') {
+                _this.creaheavyWaterPlaneEnemy();
+                _this.makeDoneFlag++;
+            }
+            if (enemyFlag == null && _this.makeDoneFlag < enemyNumber) {
+                // 这个是当所有敌人都生成完，但是敌人数还不为总敌人数时调用；因为floor的原因，有可能丢失敌人数
+            }
         };
         this.schedule(this.makeEnemy, 2, enemyNumber);
+        this.enemyNumberBar.node.active = true; //开始游戏后敌人条可见
     },
-    creatEnemy: function creatEnemy() {
-        // 创建敌人
-        var enemyNumber = this.levelData.enemyNumber; // 获得敌人数量
+    randomEnemy: function randomEnemy() {
+        var randomNumber = Math.floor(Math.random() * 100); //得到一个0-100之间的值
+        var enemyFlag = null;
+        if (randomNumber < 25 && this.makeUFOEnemyNumber < this.UFOTotalNumber) {
+            enemyFlag = 'UFO';
+        }
+        if (randomNumber >= 25 && randomNumber < 50 && this.makeRocketEnemyNumber < this.rocketTotalNumber) {
+            enemyFlag = 'rocket';
+        }
+        if (randomNumber >= 50 && randomNumber < 70 && this.makeWaveRobotEnemyNumber < this.waveRobotTotalNumber) {
+            enemyFlag = 'waveRobot';
+        }
+        if (randomNumber >= 70 && randomNumber < 80 && this.makeSpacePlaneEnemyNumber < this.spacePlaneTotalNumber) {
+            enemyFlag = 'spacePlane';
+        }
+        if (randomNumber >= 80 && randomNumber < 90 && this.makeThrowRobotEnemyNumber < this.throwRobotTotalNumber) {
+            enemyFlag = 'throwRobot';
+        }
+        if (randomNumber >= 90 && randomNumber <= 100 && this.makeHeavyPlaneEnemyNumber < this.heavyPlaneTotalNumber) {
+            enemyFlag = 'heavyWaterPlane';
+        }
+        return enemyFlag;
+    },
+    creatUFOEnemy: function creatUFOEnemy() {
+        // 创建UFO
+        if (this.makeUFOEnemyNumber < this.UFOTotalNumber) {
+            // 生成UFO
+            var enemy = cc.instantiate(this.UFOPrefab);
+            enemy.parent = this.node;
+            this.enemyArray.push(enemy);
+            this.makeUFOEnemyNumber++;
+        }
+    },
+    creatRocketEnemy: function creatRocketEnemy() {
+        // 创建火箭
+    },
+    creatWaveRobotEnemy: function creatWaveRobotEnemy() {
+        // 创建波动机器人
+    },
+    creatSpacePlaneEnemy: function creatSpacePlaneEnemy() {
+        // 创建深空飞船
+    },
+    creatThrowRobotEnemy: function creatThrowRobotEnemy() {
+        // 创建投掷机器人
+    },
+    creaheavyWaterPlaneEnemy: function creaheavyWaterPlaneEnemy() {
+        // 创建重水飞船
     },
     succeedEventEmit: function succeedEventEmit() {
         var _this2 = this;
 
-        this.enemyArray.map(function (item) {
-            if (item.active == false) {
-                item.parent = null;
-                _this2.removeByValue(_this2.enemyArray, item);
+        if (this.gameState == 1) {
+            // gameState代表游戏状态 0：未开始，1：开始
+            this.enemyArray.map(function (item) {
+                if (item.active == false) {
+                    item.parent = null;
+                    _this2.removeByValue(_this2.enemyArray, item);
+                    _this2.remainEnemy--; // 每移出一个敌人剩余敌人数减1
+                }
+            });
+            if (this.makeDoneFlag == this.levelData.enemyNumber && this.enemyArray.length == 0) {
+                this.node.emit("succeed");
+                this.makeDoneFlag = -1;
+                this.gameState = 0;
             }
-        });
-        if (this.makeDoneFlag == this.levelData.enemyNumber && this.enemyArray.length == 0) {
-            this.node.emit("succeed");
-            this.makeDoneFlag = -1;
         }
     },
     popFailButton: function popFailButton() {
         //弹出失败重来按钮
         this.failButton.active = true;
+        this.gameState = 0; // gameState == 0,表明游戏结束
+    },
+    updateEnemyNumberBar: function updateEnemyNumberBar() {
+        // 更新敌人数量条
+        if (this.gameState == 1) {
+            var ratio = this.remainEnemy / this.levelData.enemyNumber;
+            this.enemyNumberBar.progress = ratio;
+        }
     },
     clearAllEnemy: function clearAllEnemy() {
         // 停止所有计时器
@@ -160,6 +264,7 @@ cc.Class({
     start: function start() {},
     update: function update(dt) {
         this.succeedEventEmit();
+        this.updateEnemyNumberBar();
         //cc.log('enemy:'+this.enemyArray.length);
         //cc.log('flag:'+this.makeDoneFlag)
     }

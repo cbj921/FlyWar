@@ -25,7 +25,7 @@
     "relativePath": "prefab"
   },
   "fb582916-ab76-4c3e-b31f-79216b544195": {
-    "asset": 1559490649781,
+    "asset": 1559559062079,
     "meta": 1559479023000,
     "relativePath": "Texture"
   },
@@ -220,8 +220,8 @@
     "relativePath": "Texture\\晶体能源储存度\\进度条5.png"
   },
   "38de84f1-b7cd-411d-b575-58f635f8464f": {
-    "asset": 1559564591818,
-    "meta": 1559564591844,
+    "asset": 1559571583002,
+    "meta": 1559571583026,
     "relativePath": "Scene\\main.fire"
   },
   "2f8cd376-f5bd-4448-a854-f0bac975b8d0": {
@@ -759,11 +759,6 @@
     "meta": 1559559062103,
     "relativePath": "Texture\\失败.png"
   },
-  "49cd2de0-a72f-44ef-aa6c-07b05f91fc68": {
-    "asset": 1559562749946,
-    "meta": 1559562759557,
-    "relativePath": "Script\\UI脚本\\levelScript.js"
-  },
   "37858e2d-17ef-4306-8415-d2cfb7bee3c4": {
     "asset": 1559563489034,
     "meta": 1559563495158,
@@ -774,9 +769,24 @@
     "meta": 1559563877587,
     "relativePath": "Script\\mainPlane.js"
   },
+  "49cd2de0-a72f-44ef-aa6c-07b05f91fc68": {
+    "asset": 1559570155445,
+    "meta": 1559570284322,
+    "relativePath": "Script\\UI脚本\\levelScript.js"
+  },
+  "c610597f-ddae-4f15-9355-2a81e218e608": {
+    "asset": 1559575793317,
+    "meta": 1559575793319,
+    "relativePath": "BGM"
+  },
+  "544d8bf8-9441-441d-9708-39ca4260a5d5": {
+    "asset": 1559575807662,
+    "meta": 1559575807722,
+    "relativePath": "BGM\\bgm.mp3"
+  },
   "fdaaf788-7bbb-4ea7-94df-e7b96a4b49d7": {
-    "asset": 1559564588172,
-    "meta": 1559564589589,
+    "asset": 1559579872272,
+    "meta": 1559579877947,
     "relativePath": "Script\\enemyControl.js"
   }
 }
