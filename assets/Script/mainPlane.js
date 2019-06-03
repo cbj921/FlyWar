@@ -110,17 +110,23 @@ cc.Class({
         this.Canvas.on(cc.Node.EventType.TOUCH_END, this.endTouchBack, this.node);
     },
 
+    offTouchEventRegister(){
+        this.Canvas.off(cc.Node.EventType.TOUCH_START, this.startTouchBack, this.node);
+        this.Canvas.off(cc.Node.EventType.TOUCH_MOVE, this.moveTouchBack, this.node);
+        this.Canvas.off(cc.Node.EventType.TOUCH_END, this.endTouchBack, this.node);
+    },
+
     updatePlanePos(dt) {
         if (!this.isMoving) {
             return;
+        }else{
+            let oldPos = this.node.position;
+            let direction = this.moveToPos.sub(oldPos).normalize();// 获得移动方向
+            let distance = this.moveToPos.sub(oldPos).mag(); // 获得向量的长度
+            if (distance > this.moveLimit) {
+                this.node.setPosition(oldPos.add(direction.mul(this.moveSpeed * dt)));
+            }
         }
-        let oldPos = this.node.position;
-        let direction = this.moveToPos.sub(oldPos).normalize();// 获得移动方向
-        let distance = this.moveToPos.sub(oldPos).mag(); // 获得向量的长度
-        if (distance > this.moveLimit) {
-            this.node.setPosition(oldPos.add(direction.mul(this.moveSpeed * dt)));
-        }
-        // 偏移方向
 
     },
 
@@ -139,6 +145,8 @@ cc.Class({
     },
 
     failEvent() {
+        this.offTouchEventRegister();
+        this.isMoving = 0; // 让移动标志位为0,如果不这样，飞机归位后还会飞出来
         this.initHealthBar();// 让血回满，就不会一直发射事件
         this.strengthLabel.emit('fail');// 给strengthLabel发送失败事件
         this.Canvas.emit("fail"); // 给canvas 发送失败事件

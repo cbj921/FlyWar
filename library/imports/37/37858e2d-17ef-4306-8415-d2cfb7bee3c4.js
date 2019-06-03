@@ -92,9 +92,8 @@ cc.Class({
     },
     failBack: function failBack() {
         // 通关失败后的回调函数
-        this.init();
-        this.enemyControl.clearAllEnemy();
-        cc.log("fail");
+        this.mainPlane.init();
+        this.enemyControl.popFailButton();
     },
 
 

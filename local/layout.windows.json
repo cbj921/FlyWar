@@ -18,7 +18,7 @@
             ],
             "height": 721,
             "type": "panel",
-            "width": 205.8874969482422
+            "width": 204
           },
           {
             "active": 0,
@@ -27,7 +27,7 @@
             ],
             "height": 721,
             "type": "panel",
-            "width": 205.8874969482422
+            "width": 204
           },
           {
             "active": 0,
@@ -36,10 +36,10 @@
             ],
             "height": 721,
             "type": "panel",
-            "width": 716.625
+            "width": 720.4000244140625
           },
           {
-            "active": 2,
+            "active": 0,
             "children": [
               "inspector",
               "cocos-services",
@@ -85,7 +85,7 @@
       "x": 420,
       "y": 32,
       "width": 672,
-      "height": 745
+      "height": 747
     }
   }
 }

@@ -12,6 +12,7 @@ cc.Class({
         heavyWaterPlanePrefab: cc.Prefab,
 
         enemyNumberBar:cc.ProgressBar,
+        failButton:cc.Node,
     },
 
     initLevelData() {
@@ -24,6 +25,7 @@ cc.Class({
         // 为什么makeDoneFlag 为 -1 ？？？
         this.makeDoneFlag = -1; // 有点奇怪初始值为-1，这个变量为标志位，当它的值等于敌人的数量时，说明敌人的生成已经完成
         this.enemyArray = [];
+        this.failButton.active = false; // 初始让失败按钮不可见
     },
 
     startGame() {
@@ -52,12 +54,15 @@ cc.Class({
         }
     },
 
+    popFailButton(){
+        //弹出失败重来按钮
+        this.failButton.active = true;
+    },
+
     clearAllEnemy() {
         // 停止所有计时器
         // 将全局数组里面的敌人都销毁就好了
-        cc.log('clear');
         this.unscheduleAllCallbacks();
-        cc.log(this.enemyArray);
         this.enemyArray.map((item) => {
             item.parent = null;
             item.destroy(); //销毁数组中的节点

@@ -220,8 +220,8 @@
     "relativePath": "Texture\\晶体能源储存度\\进度条5.png"
   },
   "38de84f1-b7cd-411d-b575-58f635f8464f": {
-    "asset": 1559541270231,
-    "meta": 1559541270269,
+    "asset": 1559559535724,
+    "meta": 1559559535740,
     "relativePath": "Scene\\main.fire"
   },
   "2f8cd376-f5bd-4448-a854-f0bac975b8d0": {
@@ -704,11 +704,6 @@
     "meta": 1559491853628,
     "relativePath": "Script\\UI脚本\\strengthScript.js"
   },
-  "fdaaf788-7bbb-4ea7-94df-e7b96a4b49d7": {
-    "asset": 1559494597791,
-    "meta": 1559494601386,
-    "relativePath": "Script\\enemyControl.js"
-  },
   "a3c1dbcc-3905-4830-9373-283dd097e5d1": {
     "asset": 1559534960723,
     "meta": 1559534136502,
@@ -759,19 +754,29 @@
     "meta": 1559535350229,
     "relativePath": "Script\\bullet\\grainBullet.js"
   },
-  "53f80463-e3fa-4e29-bedd-44d889102a5e": {
-    "asset": 1559541132179,
-    "meta": 1559541133817,
-    "relativePath": "Script\\mainPlane.js"
-  },
   "699e9c18-9d88-4e78-9d4a-e06fabc5161e": {
     "asset": 1559543271882,
     "meta": 1559543279504,
     "relativePath": "Script\\UI脚本\\subWeaponScript.js"
   },
+  "3b2546b0-7c7a-495c-8907-bdc920078ec9": {
+    "asset": 1559559062071,
+    "meta": 1559559062103,
+    "relativePath": "Texture\\失败.png"
+  },
+  "fdaaf788-7bbb-4ea7-94df-e7b96a4b49d7": {
+    "asset": 1559559812018,
+    "meta": 1559559915018,
+    "relativePath": "Script\\enemyControl.js"
+  },
   "37858e2d-17ef-4306-8415-d2cfb7bee3c4": {
-    "asset": 1559543434725,
-    "meta": 1559543435983,
+    "asset": 1559560418905,
+    "meta": 1559560458013,
     "relativePath": "Script\\gameControl.js"
+  },
+  "53f80463-e3fa-4e29-bedd-44d889102a5e": {
+    "asset": 1559560447345,
+    "meta": 1559560458017,
+    "relativePath": "Script\\mainPlane.js"
   }
 }
