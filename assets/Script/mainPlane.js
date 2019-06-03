@@ -167,6 +167,7 @@ cc.Class({
             this.laserBulletInit();
         }
     },
+    // 以下粒子枪子弹
     grainBulletInit(){
         if(this.grainPool == undefined){
             // 对象池不存在我们才新建
@@ -178,7 +179,7 @@ cc.Class({
             }
         }
         //
-        let bulletCallback = () => {
+        let rightBulletCallback = () => {
             let bullet = null;
             if (this.grainPool.size() > 0) { // 通过 size 接口判断对象池中是否有空闲的对象
                 bullet = this.grainPool.get();
@@ -189,7 +190,20 @@ cc.Class({
             bullet.position = cc.v2(this.node.x + 125, this.node.y); // 放在飞机右边
             this.grainBulletAction(bullet,125);
         };
-        this.schedule(bulletCallback,1 / (this.mainPlaneObject.subWeapon.grainGun.speedNumber),10);
+        let leftBulletCallback = () => {
+            let bullet = null;
+            if (this.grainPool.size() > 0) { // 通过 size 接口判断对象池中是否有空闲的对象
+                bullet = this.grainPool.get();
+            } else { // 如果没有空闲对象，也就是对象池中备用对象不够时，我们就用 cc.instantiate 重新创建
+                bullet = cc.instantiate(this.grainGunBullet);
+            }
+            bullet.parent = this.node.parent; // 将生成的子弹加入canvas节点
+            bullet.position = cc.v2(this.node.x - 125, this.node.y); // 放在飞机右边
+            this.grainBulletAction(bullet,-125);
+        };
+
+        this.schedule(rightBulletCallback,1 / (this.mainPlaneObject.subWeapon.grainGun.speedNumber),15);
+        this.schedule(leftBulletCallback,1 / (this.mainPlaneObject.subWeapon.grainGun.speedNumber),15);
 
     },
     grainBulletAction(bulletNode,offset) {
@@ -205,14 +219,54 @@ cc.Class({
         let shootAction = cc.sequence(this.moveAction, this.finished);
         bulletNode.runAction(shootAction);
     },
-
+    // 以下是镭射枪子弹
     laserBulletInit(){
-        this.laserPool = new cc.NodePool();
-        let initCount = 20;
-        for (let i = 0; i < initCount; i++) {
-            let bullet = cc.instantiate(this.grainGunBullet);
-            this.laserPool.put(bullet);
+        if(this.laserPool == undefined){
+            this.laserPool = new cc.NodePool();
+            let initCount = 10;
+            for (let i = 0; i < initCount; i++) {
+                let bullet = cc.instantiate(this.laserGunBullet);
+                this.laserPool.put(bullet);
+            }
         }
+        let rightBulletCallback = () => {
+            let bullet = null;
+            if (this.laserPool.size() > 0) { // 通过 size 接口判断对象池中是否有空闲的对象
+                bullet = this.laserPool.get();
+            } else { // 如果没有空闲对象，也就是对象池中备用对象不够时，我们就用 cc.instantiate 重新创建
+                bullet = cc.instantiate(this.laserGunBullet);
+            }
+            bullet.parent = this.node.parent; // 将生成的子弹加入canvas节点
+            bullet.position = cc.v2(this.node.x + 125, this.node.y); // 放在飞机右边
+            this.laserBulletAction(bullet,125);
+        };
+        let leftBulletCallback = () => {
+            let bullet = null;
+            if (this.laserPool.size() > 0) { // 通过 size 接口判断对象池中是否有空闲的对象
+                bullet = this.laserPool.get();
+            } else { // 如果没有空闲对象，也就是对象池中备用对象不够时，我们就用 cc.instantiate 重新创建
+                bullet = cc.instantiate(this.laserGunBullet);
+            }
+            bullet.parent = this.node.parent; // 将生成的子弹加入canvas节点
+            bullet.position = cc.v2(this.node.x - 125, this.node.y); // 放在飞机右边
+            this.laserBulletAction(bullet,-125);
+        };
+        this.schedule(rightBulletCallback,1 / (this.mainPlaneObject.subWeapon.laserGun.speedNumber),4,0.5);
+        this.schedule(leftBulletCallback,1 / (this.mainPlaneObject.subWeapon.laserGun.speedNumber),4);
+    },
+    laserBulletAction(bulletNode,offset){
+        let duration = (1100 - this.node.y) / 800;  // 计算时间，这样不管在哪个位置发射子弹速度都一样了
+        let backAction = cc.moveBy(0.5,cc.v2(0,-50)); // 往后退的动作
+        this.moveAction = cc.moveTo(duration, cc.v2(this.node.x+offset, 1100)); // 初始位置是0
+        this.finished = cc.callFunc(() => {
+            if (this.laserPool == null) {
+                bulletNode.destroy();  //因为飞机没了后，对象池也没了,所以把剩下的子弹销毁
+            } else {
+                this.laserPool.put(bulletNode);
+            }
+        });
+        let shootAction = cc.sequence(backAction,this.moveAction, this.finished);
+        bulletNode.runAction(shootAction);
     },
 ///////////////////////
     getAllEnemyData() {
@@ -234,6 +288,7 @@ cc.Class({
             let bullet = cc.instantiate(bulletPrefab);
             this.bulletPool.put(bullet);
         }
+        
     },
 
     creatBullet() {
