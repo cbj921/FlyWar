@@ -149,6 +149,20 @@ cc.Class({
                 this.varHealth = 0;
             }
         }
+        if (other.tag == 2) {
+            // 被镭射激光射中
+            this.varHealth -= this.mainPlaneData.subWeapon.laserGun.attackNumber;
+            if (this.varHealth < 0) {
+                this.varHealth = 0;
+            }
+        }
+        if (other.tag == 3) {
+            // 被粒子枪粒子击中
+            this.varHealth -= this.mainPlaneData.subWeapon.grainGun.attackNumber;
+            if (this.varHealth < 0) {
+                this.varHealth = 0;
+            }
+        }
     },
     onLoad: function onLoad() {
         this.initData();

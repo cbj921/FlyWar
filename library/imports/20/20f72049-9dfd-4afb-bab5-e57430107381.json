@@ -2,17 +2,17 @@
   "__type__": "cc.SpriteFrame",
   "content": {
     "name": "放大粒子",
-    "texture": "322e140e-b833-46a5-bc75-aafeec0f2e45",
+    "texture": "72e6a707-7bbc-4b9a-922b-ce7ecfd28607",
     "atlas": "",
     "rect": [
       7,
       3,
-      185,
-      193
+      186,
+      194
     ],
     "offset": [
-      -0.5,
-      0.5
+      0,
+      0
     ],
     "originalSize": [
       200,

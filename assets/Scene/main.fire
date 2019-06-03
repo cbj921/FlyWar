@@ -53,8 +53,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.2686355581699029,
-      "y": 0.2686355581699029,
+      "x": 0.3307291666666707,
+      "y": 0.3307291666666707,
       "z": 1
     },
     "_quat": {
@@ -6647,7 +6647,7 @@
   {
     "__type__": "cc.Node",
     "_name": "subWeaponUpgradeBg",
-    "_objFlags": 0,
+    "_objFlags": 512,
     "_parent": {
       "__id__": 1
     },
@@ -10101,8 +10101,12 @@
         "__uuid__": "1815df03-7e0e-4d44-880e-7ed42590c7da"
       }
     ],
-    "grainGunBullet": null,
-    "laserGunBullet": null,
+    "grainGunBullet": {
+      "__uuid__": "20b92162-40c8-47d1-9e31-02067845550e"
+    },
+    "laserGunBullet": {
+      "__uuid__": "33ef84a7-e79f-4b8b-88ed-e9c824790be5"
+    },
     "strengthLabel": {
       "__id__": 31
     },

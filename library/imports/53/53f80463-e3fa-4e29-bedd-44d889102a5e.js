@@ -158,13 +158,68 @@ cc.Class({
     useGrainGun: function useGrainGun() {
         if (this.powerNumber >= this.mainPlaneObject.subWeapon.grainGun.powerCost) {
             this.powerNumber -= this.mainPlaneObject.subWeapon.grainGun.powerCost;
+            this.grainBulletInit();
         }
     },
     useLaserGun: function useLaserGun() {
         if (this.powerNumber >= this.mainPlaneObject.subWeapon.laserGun.powerCost) {
             this.powerNumber -= this.mainPlaneObject.subWeapon.laserGun.powerCost;
+            this.laserBulletInit();
         }
     },
+    grainBulletInit: function grainBulletInit() {
+        var _this2 = this;
+
+        if (this.grainPool == undefined) {
+            // 对象池不存在我们才新建
+            this.grainPool = new cc.NodePool();
+            var initCount = 20;
+            for (var i = 0; i < initCount; i++) {
+                var bullet = cc.instantiate(this.grainGunBullet);
+                this.grainPool.put(bullet);
+            }
+        }
+        //
+        var bulletCallback = function bulletCallback() {
+            var bullet = null;
+            if (_this2.grainPool.size() > 0) {
+                // 通过 size 接口判断对象池中是否有空闲的对象
+                bullet = _this2.grainPool.get();
+            } else {
+                // 如果没有空闲对象，也就是对象池中备用对象不够时，我们就用 cc.instantiate 重新创建
+                bullet = cc.instantiate(_this2.grainGunBullet);
+            }
+            bullet.parent = _this2.node.parent; // 将生成的子弹加入canvas节点
+            bullet.position = cc.v2(_this2.node.x + 125, _this2.node.y); // 放在飞机右边
+            _this2.grainBulletAction(bullet, 125);
+        };
+        this.schedule(bulletCallback, 1 / this.mainPlaneObject.subWeapon.grainGun.speedNumber, 10);
+    },
+    grainBulletAction: function grainBulletAction(bulletNode, offset) {
+        var _this3 = this;
+
+        var duration = (1100 - this.node.y) / 2000; // 计算时间，这样不管在哪个位置发射子弹速度都一样了
+        this.moveAction = cc.moveTo(duration, cc.v2(this.node.x + offset, 1100)); // 初始位置是0
+        this.finished = cc.callFunc(function () {
+            if (_this3.grainPool == null) {
+                bulletNode.destroy(); //因为飞机没了后，对象池也没了,所以把剩下的子弹销毁
+            } else {
+                _this3.grainPool.put(bulletNode);
+            }
+        });
+        var shootAction = cc.sequence(this.moveAction, this.finished);
+        bulletNode.runAction(shootAction);
+    },
+    laserBulletInit: function laserBulletInit() {
+        this.laserPool = new cc.NodePool();
+        var initCount = 20;
+        for (var i = 0; i < initCount; i++) {
+            var bullet = cc.instantiate(this.grainGunBullet);
+            this.laserPool.put(bullet);
+        }
+    },
+
+    ///////////////////////
     getAllEnemyData: function getAllEnemyData() {
         // 获取到所有敌人数据
         this.UFOData = JSON.parse(cc.sys.localStorage.getItem("UFOObject"));
@@ -185,33 +240,33 @@ cc.Class({
         }
     },
     creatBullet: function creatBullet() {
-        var _this2 = this;
+        var _this4 = this;
 
         this.bulletCallback = function () {
             var bullet = null;
-            if (_this2.bulletPool.size() > 0) {
+            if (_this4.bulletPool.size() > 0) {
                 // 通过 size 接口判断对象池中是否有空闲的对象
-                bullet = _this2.bulletPool.get();
+                bullet = _this4.bulletPool.get();
             } else {
                 // 如果没有空闲对象，也就是对象池中备用对象不够时，我们就用 cc.instantiate 重新创建
-                bullet = cc.instantiate(_this2.bullet[0]);
+                bullet = cc.instantiate(_this4.bullet[0]);
             }
-            bullet.parent = _this2.node.parent; // 将生成的子弹加入canvas节点
-            bullet.position = cc.v2(_this2.node.x, _this2.node.y);
-            _this2.bulletAction(bullet);
+            bullet.parent = _this4.node.parent; // 将生成的子弹加入canvas节点
+            bullet.position = cc.v2(_this4.node.x, _this4.node.y);
+            _this4.bulletAction(bullet);
         };
         this.schedule(this.bulletCallback, 1 / (this.mainPlaneObject.mainWeapon.speedNumber / 10)); //
     },
     bulletAction: function bulletAction(bulletNode) {
-        var _this3 = this;
+        var _this5 = this;
 
         var duration = (1100 - this.node.y) / 1200; // 计算时间，这样不管在哪个位置发射子弹速度都一样了
         this.moveAction = cc.moveTo(duration, cc.v2(this.node.x, 1100)); // 初始位置是0
         this.finished = cc.callFunc(function () {
-            if (_this3.bulletPool == null) {
+            if (_this5.bulletPool == null) {
                 bulletNode.destroy(); //因为飞机没了后，对象池也没了,所以把剩下的子弹销毁
             } else {
-                _this3.bulletPool.put(bulletNode);
+                _this5.bulletPool.put(bulletNode);
             }
         });
         var shootAction = cc.sequence(this.moveAction, this.finished);

@@ -155,14 +155,9 @@
     "relativePath": "Texture\\副武器\\电浆炮\\电浆炮 激活.png"
   },
   "1ff739a1-59f4-44d9-84ff-42428203829f": {
-    "asset": 1559490649703,
+    "asset": 1559534711464,
     "meta": 1559479023000,
     "relativePath": "Texture\\副武器\\粒子枪"
-  },
-  "322e140e-b833-46a5-bc75-aafeec0f2e45": {
-    "asset": 1559479023000,
-    "meta": 1559490719799,
-    "relativePath": "Texture\\副武器\\粒子枪\\放大粒子.png"
   },
   "76e15ca5-d124-45d4-9e2a-e12b771f3957": {
     "asset": 1559479023000,
@@ -170,7 +165,7 @@
     "relativePath": "Texture\\副武器\\粒子枪\\粒子枪 未激活.png"
   },
   "416708c7-d4f9-4988-bd10-c11fb6a92d3d": {
-    "asset": 1559490649718,
+    "asset": 1559534803523,
     "meta": 1559479023000,
     "relativePath": "Texture\\副武器\\镭射枪"
   },
@@ -178,11 +173,6 @@
     "asset": 1559479023000,
     "meta": 1559490719815,
     "relativePath": "Texture\\副武器\\粒子枪\\粒子枪 激活.png"
-  },
-  "3c77cd2e-f5fe-4f41-9174-b163e4295b8f": {
-    "asset": 1559479023000,
-    "meta": 1559490719815,
-    "relativePath": "Texture\\副武器\\镭射枪\\激光柱.png"
   },
   "dff11ffe-7196-489f-964b-41696772a8ea": {
     "asset": 1559479023000,
@@ -230,8 +220,8 @@
     "relativePath": "Texture\\晶体能源储存度\\进度条5.png"
   },
   "38de84f1-b7cd-411d-b575-58f635f8464f": {
-    "asset": 1559533889868,
-    "meta": 1559533889896,
+    "asset": 1559535161536,
+    "meta": 1559535161570,
     "relativePath": "Scene\\main.fire"
   },
   "2f8cd376-f5bd-4448-a854-f0bac975b8d0": {
@@ -380,12 +370,12 @@
     "relativePath": "Prefab\\mainPlane\\bullet2.prefab"
   },
   "cfd68bad-058c-4b2e-947b-c0d3a241ed8d": {
-    "asset": 1559490649562,
+    "asset": 1559534142610,
     "meta": 1559479023000,
     "relativePath": "Prefab\\mainPlane"
   },
   "c22c9534-445e-4bc9-a32b-920afd10bd28": {
-    "asset": 1559490649609,
+    "asset": 1559535253313,
     "meta": 1559479023000,
     "relativePath": "Script\\bullet"
   },
@@ -478,26 +468,6 @@
     "asset": 1559479023000,
     "meta": 1559490717728,
     "relativePath": "Prefab\\enemy\\spacePlane.prefab"
-  },
-  "c3e908af-d7ab-4c10-bce2-fc2854d4d3c8": {
-    "asset": 1559479023000,
-    "meta": 1559490718213,
-    "relativePath": "Script\\enemyPrefab\\rocket.js"
-  },
-  "1cdfd8da-0e8d-4e29-8f5f-30e1d34862ee": {
-    "asset": 1559479023000,
-    "meta": 1559490718318,
-    "relativePath": "Script\\enemyPrefab\\UFO.js"
-  },
-  "b8da0366-d73c-458d-984c-b75fc20011e7": {
-    "asset": 1559479023000,
-    "meta": 1559490718260,
-    "relativePath": "Script\\enemyPrefab\\spacePlane.js"
-  },
-  "6de9a07b-021b-417d-9772-be6e29b13a41": {
-    "asset": 1559479023000,
-    "meta": 1559490718334,
-    "relativePath": "Script\\enemyPrefab\\waveRobot.js"
   },
   "49cd2de0-a72f-44ef-aa6c-07b05f91fc68": {
     "asset": 1559479023000,
@@ -749,9 +719,59 @@
     "meta": 1559533859592,
     "relativePath": "Script\\gameControl.js"
   },
+  "a3c1dbcc-3905-4830-9373-283dd097e5d1": {
+    "asset": 1559534960723,
+    "meta": 1559534136502,
+    "relativePath": "Prefab\\mainPlane\\subWeapon"
+  },
+  "c3e908af-d7ab-4c10-bce2-fc2854d4d3c8": {
+    "asset": 1559534363491,
+    "meta": 1559534398416,
+    "relativePath": "Script\\enemyPrefab\\rocket.js"
+  },
+  "b8da0366-d73c-458d-984c-b75fc20011e7": {
+    "asset": 1559534353364,
+    "meta": 1559534398481,
+    "relativePath": "Script\\enemyPrefab\\spacePlane.js"
+  },
+  "1cdfd8da-0e8d-4e29-8f5f-30e1d34862ee": {
+    "asset": 1559534324062,
+    "meta": 1559534398557,
+    "relativePath": "Script\\enemyPrefab\\UFO.js"
+  },
+  "6de9a07b-021b-417d-9772-be6e29b13a41": {
+    "asset": 1559534344465,
+    "meta": 1559534398558,
+    "relativePath": "Script\\enemyPrefab\\waveRobot.js"
+  },
+  "72e6a707-7bbc-4b9a-922b-ce7ecfd28607": {
+    "asset": 1559534711461,
+    "meta": 1559534711494,
+    "relativePath": "Texture\\副武器\\粒子枪\\放大粒子.png"
+  },
+  "b56521ab-cbca-4fe7-81ac-a743f457949c": {
+    "asset": 1559534803521,
+    "meta": 1559534803542,
+    "relativePath": "Texture\\副武器\\镭射枪\\激光柱.png"
+  },
+  "33ef84a7-e79f-4b8b-88ed-e9c824790be5": {
+    "asset": 1559535211987,
+    "meta": 1559535211998,
+    "relativePath": "Prefab\\mainPlane\\subWeapon\\laser.prefab"
+  },
+  "20b92162-40c8-47d1-9e31-02067845550e": {
+    "asset": 1559535557273,
+    "meta": 1559535557305,
+    "relativePath": "Prefab\\mainPlane\\subWeapon\\grain.prefab"
+  },
+  "c572d706-4a8b-4599-8b5b-df685beddc21": {
+    "asset": 1559535347764,
+    "meta": 1559535350229,
+    "relativePath": "Script\\bullet\\grainBullet.js"
+  },
   "53f80463-e3fa-4e29-bedd-44d889102a5e": {
-    "asset": 1559533918574,
-    "meta": 1559533924801,
+    "asset": 1559537992589,
+    "meta": 1559537996207,
     "relativePath": "Script\\mainPlane.js"
   }
 }

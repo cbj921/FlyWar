@@ -2,12 +2,12 @@
   "__type__": "cc.SpriteFrame",
   "content": {
     "name": "激光柱",
-    "texture": "3c77cd2e-f5fe-4f41-9174-b163e4295b8f",
+    "texture": "b56521ab-cbca-4fe7-81ac-a743f457949c",
     "atlas": "",
     "rect": [
-      53,
+      52,
       9,
-      94,
+      96,
       182
     ],
     "offset": [

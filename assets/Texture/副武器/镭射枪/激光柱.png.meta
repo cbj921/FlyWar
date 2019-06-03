@@ -1,6 +1,6 @@
 {
   "ver": "2.2.0",
-  "uuid": "3c77cd2e-f5fe-4f41-9174-b163e4295b8f",
+  "uuid": "b56521ab-cbca-4fe7-81ac-a743f457949c",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -8,16 +8,16 @@
   "subMetas": {
     "激光柱": {
       "ver": "1.0.3",
-      "uuid": "b1c50c7e-4f37-4165-960f-100f60a396b6",
-      "rawTextureUuid": "3c77cd2e-f5fe-4f41-9174-b163e4295b8f",
+      "uuid": "cd467da2-e437-4f04-b379-1cfed26a5e71",
+      "rawTextureUuid": "b56521ab-cbca-4fe7-81ac-a743f457949c",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
       "offsetX": 0,
       "offsetY": 0,
-      "trimX": 53,
+      "trimX": 52,
       "trimY": 9,
-      "width": 94,
+      "width": 96,
       "height": 182,
       "rawWidth": 200,
       "rawHeight": 200,

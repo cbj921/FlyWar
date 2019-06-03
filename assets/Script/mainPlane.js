@@ -158,14 +158,63 @@ cc.Class({
     useGrainGun(){
         if(this.powerNumber>=this.mainPlaneObject.subWeapon.grainGun.powerCost){
             this.powerNumber -= this.mainPlaneObject.subWeapon.grainGun.powerCost;
+            this.grainBulletInit();
         }
     },
     useLaserGun(){
         if(this.powerNumber>=this.mainPlaneObject.subWeapon.laserGun.powerCost){
             this.powerNumber -= this.mainPlaneObject.subWeapon.laserGun.powerCost;
+            this.laserBulletInit();
         }
     },
+    grainBulletInit(){
+        if(this.grainPool == undefined){
+            // 对象池不存在我们才新建
+            this.grainPool = new cc.NodePool();
+            let initCount = 20;
+            for (let i = 0; i < initCount; i++) {
+                let bullet = cc.instantiate(this.grainGunBullet);
+                this.grainPool.put(bullet);
+            }
+        }
+        //
+        let bulletCallback = () => {
+            let bullet = null;
+            if (this.grainPool.size() > 0) { // 通过 size 接口判断对象池中是否有空闲的对象
+                bullet = this.grainPool.get();
+            } else { // 如果没有空闲对象，也就是对象池中备用对象不够时，我们就用 cc.instantiate 重新创建
+                bullet = cc.instantiate(this.grainGunBullet);
+            }
+            bullet.parent = this.node.parent; // 将生成的子弹加入canvas节点
+            bullet.position = cc.v2(this.node.x + 125, this.node.y); // 放在飞机右边
+            this.grainBulletAction(bullet,125);
+        };
+        this.schedule(bulletCallback,1 / (this.mainPlaneObject.subWeapon.grainGun.speedNumber),10);
 
+    },
+    grainBulletAction(bulletNode,offset) {
+        let duration = (1100 - this.node.y) / 2000;  // 计算时间，这样不管在哪个位置发射子弹速度都一样了
+        this.moveAction = cc.moveTo(duration, cc.v2(this.node.x+offset, 1100)); // 初始位置是0
+        this.finished = cc.callFunc(() => {
+            if (this.grainPool == null) {
+                bulletNode.destroy();  //因为飞机没了后，对象池也没了,所以把剩下的子弹销毁
+            } else {
+                this.grainPool.put(bulletNode);
+            }
+        });
+        let shootAction = cc.sequence(this.moveAction, this.finished);
+        bulletNode.runAction(shootAction);
+    },
+
+    laserBulletInit(){
+        this.laserPool = new cc.NodePool();
+        let initCount = 20;
+        for (let i = 0; i < initCount; i++) {
+            let bullet = cc.instantiate(this.grainGunBullet);
+            this.laserPool.put(bullet);
+        }
+    },
+///////////////////////
     getAllEnemyData() {
         // 获取到所有敌人数据
         this.UFOData = JSON.parse(cc.sys.localStorage.getItem("UFOObject"));
