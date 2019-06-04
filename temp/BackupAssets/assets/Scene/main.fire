@@ -56,8 +56,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.1772333720600392,
-      "y": 0.1772333720600392,
+      "x": 0.229739670999407,
+      "y": 0.229739670999407,
       "z": 1
     },
     "_quat": {
@@ -11190,11 +11190,15 @@
     "waveRobotPrefab": {
       "__uuid__": "c96f760f-6732-48e1-99a5-c933949c6582"
     },
-    "throwRobotPrefab": null,
+    "throwRobotPrefab": {
+      "__uuid__": "dfcffc33-0f33-45eb-9109-bed9beb2db11"
+    },
     "spacePlanePrefab": {
       "__uuid__": "16f1e7c7-8abd-456f-81e2-f4d58e1b043d"
     },
-    "heavyWaterPlanePrefab": null,
+    "heavyWaterPlanePrefab": {
+      "__uuid__": "77aca329-f83d-4735-adfa-e0cbdc35515f"
+    },
     "enemyNumberBar": {
       "__id__": 212
     },

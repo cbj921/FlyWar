@@ -220,8 +220,8 @@
     "relativePath": "Texture\\晶体能源储存度\\进度条5.png"
   },
   "38de84f1-b7cd-411d-b575-58f635f8464f": {
-    "asset": 1559640511328,
-    "meta": 1559640511353,
+    "asset": 1559645578747,
+    "meta": 1559645578770,
     "relativePath": "Scene\\main.fire"
   },
   "2f8cd376-f5bd-4448-a854-f0bac975b8d0": {
@@ -293,11 +293,6 @@
     "asset": 1559490649750,
     "meta": 1559479023000,
     "relativePath": "Texture\\敌人\\重水飞船"
-  },
-  "cfe734dc-6623-4246-a7bd-00522231b814": {
-    "asset": 1559479023000,
-    "meta": 1559490719908,
-    "relativePath": "Texture\\敌人\\重水飞船\\重水飞船.png"
   },
   "2033e125-2d82-417a-9757-45fee0faeee8": {
     "asset": 1559479023000,
@@ -769,11 +764,6 @@
     "meta": 1559623049466,
     "relativePath": "Script\\enemyPrefab\\waveRobot.js"
   },
-  "69df0abc-39f1-4748-bf7b-f85a43d78545": {
-    "asset": 1559623270653,
-    "meta": 1559623297408,
-    "relativePath": "Script\\UI脚本\\coinScript.js"
-  },
   "0690fcac-37e1-4814-9134-b7757175b7f8": {
     "asset": 1559640431014,
     "meta": 1559640441331,
@@ -794,24 +784,39 @@
     "meta": 1559643290417,
     "relativePath": "Script\\enemyPrefab\\throwRobot.js"
   },
-  "fdaaf788-7bbb-4ea7-94df-e7b96a4b49d7": {
-    "asset": 1559643769712,
-    "meta": 1559643857833,
-    "relativePath": "Script\\enemyControl.js"
-  },
-  "37858e2d-17ef-4306-8415-d2cfb7bee3c4": {
-    "asset": 1559643866064,
-    "meta": 1559643867212,
-    "relativePath": "Script\\gameControl.js"
+  "d600037f-d634-4853-b5b2-b3e8e18ffe99": {
+    "asset": 1559644470723,
+    "meta": 1559644470764,
+    "relativePath": "Texture\\敌人\\重水飞船\\重水飞船.png"
   },
   "53f80463-e3fa-4e29-bedd-44d889102a5e": {
-    "asset": 1559643943745,
-    "meta": 1559644063908,
+    "asset": 1559644630650,
+    "meta": 1559644634799,
     "relativePath": "Script\\mainPlane.js"
   },
   "96cf3d32-86b0-42ec-ad8f-1c7001e7ff45": {
-    "asset": 1559644170643,
-    "meta": 1559644172232,
+    "asset": 1559644910747,
+    "meta": 1559644912824,
     "relativePath": "Script\\enemyPrefab\\heavyPlane.js"
+  },
+  "77aca329-f83d-4735-adfa-e0cbdc35515f": {
+    "asset": 1559645108122,
+    "meta": 1559645108132,
+    "relativePath": "Prefab\\enemy\\heavyWaterPlane.prefab"
+  },
+  "fdaaf788-7bbb-4ea7-94df-e7b96a4b49d7": {
+    "asset": 1559645222542,
+    "meta": 1559645251227,
+    "relativePath": "Script\\enemyControl.js"
+  },
+  "69df0abc-39f1-4748-bf7b-f85a43d78545": {
+    "asset": 1559645539199,
+    "meta": 1559645542976,
+    "relativePath": "Script\\UI脚本\\coinScript.js"
+  },
+  "37858e2d-17ef-4306-8415-d2cfb7bee3c4": {
+    "asset": 1559645567360,
+    "meta": 1559645568359,
+    "relativePath": "Script\\gameControl.js"
   }
 }

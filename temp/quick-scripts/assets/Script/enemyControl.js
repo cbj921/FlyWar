@@ -192,6 +192,7 @@ cc.Class({
         this.waveRobotInitData();
         this.spacePlaneInitData();
         this.throwRobotInitData();
+        this.heavyPlaneInitData();
     },
 
 

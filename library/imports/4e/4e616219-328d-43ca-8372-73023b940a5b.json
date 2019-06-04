@@ -2,16 +2,16 @@
   "__type__": "cc.SpriteFrame",
   "content": {
     "name": "重水飞船",
-    "texture": "cfe734dc-6623-4246-a7bd-00522231b814",
+    "texture": "d600037f-d634-4853-b5b2-b3e8e18ffe99",
     "atlas": "",
     "rect": [
-      24,
+      23,
       16,
-      152,
+      153,
       168
     ],
     "offset": [
-      0,
+      -0.5,
       0
     ],
     "originalSize": [

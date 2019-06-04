@@ -425,19 +425,13 @@ cc.Class({
             }
         }
         if (other.tag == 9) {
-            //tag==7表示碰到重水飞船
+            //tag==9表示碰到重水飞船
             this.varHealth = this.varHealth - this.heavyPlaneData.impactAttack;
             if (this.varHealth < 0) {
                 this.varHealth = 0;
             }
         }
-        if (other.tag == 10) {
-            //tag==8表示碰到重水飞船子弹
-            this.varHealth = this.varHealth - this.heavyPlaneData.bulletAttack;
-            if (this.varHealth < 0) {
-                this.varHealth = 0;
-            }
-        }
+        // 重水飞船不设子弹,靠庞大的体积造成压迫
     },
     update: function update(dt) {
         this.updatePlanePos(dt); // 更新飞机位置

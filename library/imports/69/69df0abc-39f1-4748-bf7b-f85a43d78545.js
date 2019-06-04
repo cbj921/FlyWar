@@ -14,7 +14,7 @@ cc.Class({
         this.label = this.node.getChildByName("coinNumber").getComponent(cc.Label); // 获取标签组件
         if (this.coinData == null) {
             // 如果获取不到金币的数据说明为第一次游戏
-            this.coinData = 1000000; // 初始金币为 1000
+            this.coinData = 5000; // 初始金币为 5000
             cc.sys.localStorage.setItem("coinData", this.coinData);
         }
         this.label.string = this.coinData;
