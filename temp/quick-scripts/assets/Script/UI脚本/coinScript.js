@@ -18,6 +18,7 @@ cc.Class({
             cc.sys.localStorage.setItem("coinData", this.coinData);
         }
         this.label.string = this.coinData;
+        this.node.active = true;
     },
     coinSelfGrow: function coinSelfGrow() {
         var _this = this;
@@ -36,6 +37,9 @@ cc.Class({
     closeCoinSelfGrow: function closeCoinSelfGrow() {
         // 关闭金币自增长，因为在进行游戏过程中不要自增长
         this.unscheduleAllCallbacks();
+    },
+    hideIcon: function hideIcon() {
+        this.node.active = false;
     },
     onLoad: function onLoad() {}
 }

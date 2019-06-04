@@ -1,0 +1,75 @@
+2019-06-04T02:18:41.308Z - normal: Load ~/.CocosCreator/settings.json
+2019-06-04T02:18:42.558Z - normal: Initializing Asset Database
+2019-06-04T02:18:42.574Z - normal: checking language setting...
+2019-06-04T02:18:42.574Z - normal: Language: zh
+2019-06-04T02:18:44.342Z - success: preview server running at http://localhost:7456
+2019-06-04T02:18:44.358Z - success: protocol editor-framework registered
+2019-06-04T02:18:44.358Z - success: protocol app registered
+2019-06-04T02:18:44.358Z - success: protocol theme registered
+2019-06-04T02:18:44.358Z - success: protocol packages registered
+2019-06-04T02:18:44.358Z - success: protocol uuid registerred
+2019-06-04T02:18:44.358Z - success: protocol db registerred
+2019-06-04T02:18:44.358Z - success: protocol thumbnail registerred
+2019-06-04T02:18:44.358Z - success: protocol unpack registerred
+2019-06-04T02:18:44.358Z - success: protocol disable-commonjs registerred
+2019-06-04T02:18:44.514Z - normal: connected!
+2019-06-04T02:18:44.514Z - normal: Check project D:\CocosProject\FlyWar-master
+2019-06-04T02:18:44.514Z - normal: Initializing project D:\CocosProject\FlyWar-master
+2019-06-04T02:18:45.045Z - normal: Initializing Cocos2d
+2019-06-04T02:18:45.936Z - normal: Initializing engine extends
+2019-06-04T02:18:46.108Z - success: asset-db-debugger loaded
+2019-06-04T02:18:46.108Z - success: baidu-adapter loaded
+2019-06-04T02:18:46.123Z - success: code-editor loaded
+2019-06-04T02:18:46.123Z - success: color-picker loaded
+2019-06-04T02:18:46.326Z - success: fb-audience-network loaded
+2019-06-04T02:18:46.451Z - success: fb-live-stream loaded
+2019-06-04T02:18:46.467Z - success: google-play-instant loaded
+2019-06-04T02:18:46.529Z - success: huawei-runtime loaded
+2019-06-04T02:18:46.529Z - success: jsb-adapter loaded
+2019-06-04T02:18:46.545Z - success: oppo-runtime loaded
+2019-06-04T02:18:46.545Z - success: package-manager loaded
+2019-06-04T02:18:46.998Z - success: qqplay-adapter loaded
+2019-06-04T02:18:47.014Z - success: runtime-dev-tools loaded
+2019-06-04T02:18:47.029Z - success: sdkbox loaded
+2019-06-04T02:18:47.045Z - success: tester loaded
+2019-06-04T02:18:47.045Z - success: ui-grid loaded
+2019-06-04T02:18:47.045Z - success: ui-kit-preview-extra loaded
+2019-06-04T02:18:47.061Z - success: ui-kit-preview loaded
+2019-06-04T02:18:47.061Z - success: ui-kit loaded
+2019-06-04T02:18:47.061Z - success: ui-tree loaded
+2019-06-04T02:18:47.092Z - success: vivo-runtime loaded
+2019-06-04T02:18:47.092Z - success: weapp-adapter loaded
+2019-06-04T02:18:47.154Z - success: assets loaded
+2019-06-04T02:18:47.154Z - success: builder loaded
+2019-06-04T02:18:47.701Z - success: cocos-services loaded
+2019-06-04T02:18:47.717Z - success: console loaded
+2019-06-04T02:18:47.763Z - success: fb-instant-games loaded
+2019-06-04T02:18:47.763Z - success: google-instant-games loaded
+2019-06-04T02:18:47.763Z - success: hierarchy loaded
+2019-06-04T02:18:47.763Z - success: inspector loaded
+2019-06-04T02:18:47.779Z - success: keystore loaded
+2019-06-04T02:18:47.795Z - success: node-library loaded
+2019-06-04T02:18:47.795Z - success: package-asset loaded
+2019-06-04T02:18:47.795Z - success: preferences loaded
+2019-06-04T02:18:47.795Z - success: project-exporter loaded
+2019-06-04T02:18:47.795Z - success: project-importer loaded
+2019-06-04T02:18:47.810Z - success: project-settings loaded
+2019-06-04T02:18:47.810Z - success: scene loaded
+2019-06-04T02:18:47.810Z - success: simulator-debugger loaded
+2019-06-04T02:18:47.810Z - success: sprite-editor loaded
+2019-06-04T02:18:47.842Z - success: store loaded
+2019-06-04T02:18:47.842Z - success: timeline loaded
+2019-06-04T02:18:50.202Z - normal: Loading packages
+2019-06-04T02:18:50.249Z - normal: Watching packages
+2019-06-04T02:18:50.683Z - info: Cocos Services load base data!
+2019-06-04T02:18:51.105Z - normal: Run Application
+2019-06-04T04:32:09.277Z - error: Reference "coinLabel" of "UFO<UFO>" to external scene object "coinNumber" can not be saved in prefab asset.
+    at D:\CocosCreater\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3768
+    at r (D:\CocosCreater\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3483)
+    at i (D:\CocosCreater\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3532)
+    at D:\CocosCreater\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3553
+    at f (D:\CocosCreater\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:781)
+    at Object.c.getDumpableNode (D:\CocosCreater\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:3216)
+    at Object.c.createPrefabFrom (D:\CocosCreater\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\prefab.js:1:4069)
+    at Object.createPrefab (D:\CocosCreater\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:5363)
+    at HTMLElement.create-prefab (D:\CocosCreater\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:2681)

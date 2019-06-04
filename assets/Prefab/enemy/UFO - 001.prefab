@@ -21,7 +21,7 @@
       }
     ],
     "_active": true,
-    "_level": 1,
+    "_level": 2,
     "_components": [
       {
         "__id__": 11
@@ -278,9 +278,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "b8b7c0be-ddac-4aea-a4a0-8346a43701d5"
+      "__id__": 0
     },
-    "fileId": "3fBkOYXjxL56pKdX4Hit18",
+    "fileId": "e8r/KY5FxFHLbN+87Fg5bI",
     "sync": false
   },
   {
@@ -361,9 +361,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "b8b7c0be-ddac-4aea-a4a0-8346a43701d5"
+      "__id__": 0
     },
-    "fileId": "0aywEzVAhIvrFnz1rFF7GQ",
+    "fileId": "d8AQyDcGRMq7HzlLI5+KHz",
     "sync": false
   },
   {
@@ -470,6 +470,7 @@
     "bulletPrefab": {
       "__uuid__": "df03612b-08ab-4cbf-80b0-0542b5115d10"
     },
+    "coinLabel": null,
     "_id": ""
   },
   {
@@ -478,9 +479,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "b8b7c0be-ddac-4aea-a4a0-8346a43701d5"
+      "__id__": 0
     },
-    "fileId": "9ahtfAchxBnLWNNVMdfDFo",
+    "fileId": "dbprFgpcBAW7uFxy9rXhvq",
     "sync": false
   }
 ]

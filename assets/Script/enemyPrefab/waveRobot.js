@@ -37,6 +37,7 @@ cc.Class({
         } // 初始化数据
 
         this.mainPlaneData = JSON.parse(cc.sys.localStorage.getItem("mainPlaneObject"));// 获取飞机数据
+        this.coinData = cc.sys.localStorage.getItem('coinData');// 得到金币数据
     },
 
     moveAction() {
@@ -80,9 +81,16 @@ cc.Class({
         this.healthBar.progress = ratio;
         if(ratio == 0){
             this.node.parent = null;
+            this.getCoin();
             this.node.destroy();
         }
     },
+    getCoin(){
+        // 击杀后得到金币
+        this.coinData = this.coinData-0 + this.waveRobotObject.coin;
+        cc.sys.localStorage.setItem('coinData',this.coinData); 
+    },
+
     //子弹
     bulletInit(bulletPrefab){
         this.bulletPool = new cc.NodePool();

@@ -1,4 +1,6 @@
-
+const ENEMYTYPE_1 = ['UFO','rocket'];
+const ENEMYTYPE_2 = ['UFO','rocket','waveRobot','throwRobot'];
+const ENEMYTYPE_3 = ['UFO','rocket','waveRobot','throwRobot','spacePlane','heavyWaterPlane'];
 
 cc.Class({
     extends: cc.Component,
@@ -34,7 +36,7 @@ cc.Class({
         let enemyNumber = this.levelData.enemyNumber; // 获得敌人数量
         this.remainEnemy = this.levelData.enemyNumber;// 让剩余敌人的变量等于初始人数
         /********************************************/
-        this.UFOTotalNumber = Math.floor(this.levelData.enemyNumber * this.levelData.enmeyProportion.UFOProportion);//生成总的UFO数量
+        /*this.UFOTotalNumber = Math.floor(this.levelData.enemyNumber * this.levelData.enmeyProportion.UFOProportion);//生成总的UFO数量
         this.makeUFOEnemyNumber = 0; // 这个用来计数生成的UFO数量
 
         this.rocketTotalNumber = Math.floor(this.levelData.enemyNumber * this.levelData.enmeyProportion.rocketProportion);//生成总的rocket数量
@@ -50,12 +52,13 @@ cc.Class({
         this.makeThrowRobotEnemyNumber = 0;
 
         this.heavyPlaneTotalNumber = Math.floor(this.levelData.enemyNumber * this.levelData.enmeyProportion.heavyPlaneProportion);
-        this.makeHeavyPlaneEnemyNumber = 0;
+        this.makeHeavyPlaneEnemyNumber = 0;*/
         /********************************************/
         ///以下用创建敌人函数代替
         this.makeEnemy = () => {
             let enemyFlag = this.randomEnemy(); //获取到随机生成的敌人
-            if (enemyFlag == 'UFO') {
+
+            if (enemyFlag == 'UFO' ) {
                 this.creatUFOEnemy();
                 this.makeDoneFlag++;
             }
@@ -75,64 +78,68 @@ cc.Class({
                 this.creatThrowRobotEnemy();
                 this.makeDoneFlag++;
             }
-            if (enemyFlag = 'heavyWaterPlane') {
-                this.creaheavyWaterPlaneEnemy();
+            if (enemyFlag == 'heavyWaterPlane') {
+                this.creatHeavyWaterPlaneEnemy();
                 this.makeDoneFlag++;
             }
-            if (enemyFlag == null && this.makeDoneFlag < enemyNumber) {
-                // 这个是当所有敌人都生成完，但是敌人数还不为总敌人数时调用；因为floor的原因，有可能丢失敌人数
-            }
-        };
+            cc.log(enemyFlag);
+        }
         this.schedule(this.makeEnemy, 2, enemyNumber);
         this.enemyNumberBar.node.active = true; //开始游戏后敌人条可见
     },
     randomEnemy() {
-        let randomNumber = Math.floor(Math.random() * 100); //得到一个0-100之间的值
         let enemyFlag = null;
-        if (randomNumber < 25 && this.makeUFOEnemyNumber < this.UFOTotalNumber) {
-            enemyFlag = 'UFO';
+        if(this.levelData.level <=5){
+            let randomNumber = Math.floor(Math.random()*ENEMYTYPE_1.length);
+            enemyFlag = ENEMYTYPE_1[randomNumber];
         }
-        if ((randomNumber >= 25 && randomNumber < 50) && this.makeRocketEnemyNumber < this.rocketTotalNumber) {
-            enemyFlag = 'rocket';
+        if(this.levelData.level >5 && this.levelData.level <=10){
+            let randomNumber = Math.floor(Math.random()*ENEMYTYPE_2.length);
+            enemyFlag = ENEMYTYPE_2[randomNumber];
         }
-        if ((randomNumber >= 50 && randomNumber < 70) && this.makeWaveRobotEnemyNumber < this.waveRobotTotalNumber) {
-            enemyFlag = 'waveRobot';
-        }
-        if ((randomNumber >= 70 && randomNumber < 80) && this.makeSpacePlaneEnemyNumber < this.spacePlaneTotalNumber) {
-            enemyFlag = 'spacePlane';
-        }
-        if ((randomNumber >= 80 && randomNumber < 90) && this.makeThrowRobotEnemyNumber < this.throwRobotTotalNumber) {
-            enemyFlag = 'throwRobot';
-        }
-        if ((randomNumber >= 90 && randomNumber <= 100) && this.makeHeavyPlaneEnemyNumber < this.heavyPlaneTotalNumber) {
-            enemyFlag = 'heavyWaterPlane';
+        if(this.levelData.level >10 ){
+            let randomNumber = Math.floor(Math.random()*ENEMYTYPE_3.length);
+            enemyFlag = ENEMYTYPE_3[randomNumber];
         }
         return enemyFlag;
     },
     creatUFOEnemy() {
         // 创建UFO
-        if (this.makeUFOEnemyNumber < this.UFOTotalNumber) {
-            // 生成UFO
-            let enemy = cc.instantiate(this.UFOPrefab);
-            enemy.parent = this.node;
-            this.enemyArray.push(enemy);
-            this.makeUFOEnemyNumber++;
-        }
+        let enemy = cc.instantiate(this.UFOPrefab);
+        enemy.parent = this.node;
+        this.enemyArray.push(enemy);
+        this.makeUFOEnemyNumber++;
     },
     creatRocketEnemy() {
         // 创建火箭
+        let enemy = cc.instantiate(this.rocketPrefab);
+        enemy.parent = this.node;
+        this.enemyArray.push(enemy);
+        this.makeRocketEnemyNumber++;
     },
     creatWaveRobotEnemy() {
         // 创建波动机器人
+        let enemy = cc.instantiate(this.waveRobotPrefab);
+        enemy.parent = this.node;
+        this.enemyArray.push(enemy);
+        this.makeWaveRobotEnemyNumber++;
+        cc.log('CWaveRobot');
     },
     creatSpacePlaneEnemy() {
         // 创建深空飞船
+        let enemy = cc.instantiate(this.spacePlanePrefab);
+        enemy.parent = this.node;
+        this.enemyArray.push(enemy);
+        this.makeSpacePlaneEnemyNumber++;
+        cc.log('CSpacePlane');
     },
     creatThrowRobotEnemy() {
         // 创建投掷机器人
+        cc.log('CThrowRobot');
     },
-    creaheavyWaterPlaneEnemy() {
+    creatHeavyWaterPlaneEnemy() {
         // 创建重水飞船
+        cc.log('CHeavyWaterPlane');
     },
 
     succeedEventEmit() {

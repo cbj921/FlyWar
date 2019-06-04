@@ -31,6 +31,7 @@ cc.Class({
         this.enemyControl.initEnemyData();
         this.enemyControl.init();
         this.strengthData = this.strengthScript.init();// 获取体力数据
+        this.musicFlag = 0;//音乐播放flag
     },
 
     initData() {
@@ -63,6 +64,7 @@ cc.Class({
         this.mainWeaponButton.hideIcon();
         this.subWeaponButton.hideIcon();
         this.strengthScript.hideIcon();
+        this.coinScript.hideIcon();
         this.coinScript.closeCoinSelfGrow(); // 关闭金币自增长
         this.powerBar.active = true;
         this.grainGunBtn.active = true;
@@ -106,7 +108,16 @@ cc.Class({
         cc.log('succeed');
     },
 
-    // 按键调用到这里结束
+    musicButton(){
+        if(this.musicFlag == 0){
+            this.musicFlag = 1;
+            this.node.getComponent(cc.AudioSource).pause();
+        }else {
+            this.musicFlag = 0;
+            this.node.getComponent(cc.AudioSource).play();
+        }
+    },
+
     onLoad() {
         //cc.sys.localStorage.removeItem('mainPlaneObject');
         this.initData();
@@ -117,7 +128,7 @@ cc.Class({
         //cc.sys.localStorage.removeItem('UFOObject');
         //cc.sys.localStorage.removeItem('mainPlaneObject');
         //cc.sys.localStorage.removeItem('spacePlaneObject');
-        //cc.sys.localStorage.removeItem('lastTime');
+        //cc.sys.localStorage.removeItem('levelData');
     },
 
     update(dt) { },
