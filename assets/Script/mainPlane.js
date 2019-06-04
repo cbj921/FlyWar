@@ -288,6 +288,8 @@ cc.Class({
         this.rocketData = JSON.parse(cc.sys.localStorage.getItem("rocketObject"));
         this.waveRobotData = JSON.parse(cc.sys.localStorage.getItem("waveRobotObject"));
         this.spacePlaneData = JSON.parse(cc.sys.localStorage.getItem("spacePlaneObject"));
+        this.throwRobotData = JSON.parse(cc.sys.localStorage.getItem("throwRobotObject"));
+        this.heavyPlaneData = JSON.parse(cc.sys.localStorage.getItem("heavyPlaneObject"));
         //获取到其他敌人
         //。。。。
 
@@ -389,7 +391,34 @@ cc.Class({
                 this.varHealth = 0;
             }
         }
-
+        if(other.tag == 7){
+            //tag==7表示碰到投掷机器人
+            this.varHealth = this.varHealth - this.throwRobotData.impactAttack;
+            if (this.varHealth < 0) {
+                this.varHealth = 0;
+            }
+        }
+        if(other.tag == 8){
+            //tag==8表示碰到投掷机器人子弹
+            this.varHealth = this.varHealth - this.throwRobotData.bulletAttack;
+            if (this.varHealth < 0) {
+                this.varHealth = 0;
+            }
+        }
+        if(other.tag == 9){
+            //tag==7表示碰到重水飞船
+            this.varHealth = this.varHealth - this.heavyPlaneData.impactAttack;
+            if (this.varHealth < 0) {
+                this.varHealth = 0;
+            }
+        }
+        if(other.tag == 10){
+            //tag==8表示碰到重水飞船子弹
+            this.varHealth = this.varHealth - this.heavyPlaneData.bulletAttack;
+            if (this.varHealth < 0) {
+                this.varHealth = 0;
+            }
+        }
 
     },
 

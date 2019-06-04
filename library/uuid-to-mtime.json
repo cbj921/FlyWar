@@ -220,8 +220,8 @@
     "relativePath": "Texture\\晶体能源储存度\\进度条5.png"
   },
   "38de84f1-b7cd-411d-b575-58f635f8464f": {
-    "asset": 1559623407398,
-    "meta": 1559623407427,
+    "asset": 1559640511328,
+    "meta": 1559640511353,
     "relativePath": "Scene\\main.fire"
   },
   "2f8cd376-f5bd-4448-a854-f0bac975b8d0": {
@@ -320,7 +320,7 @@
     "relativePath": "Texture\\敌人\\飞碟\\飞碟球.png"
   },
   "d7a19abc-b4fb-4b5e-8b33-04520e65444c": {
-    "asset": 1559490649625,
+    "asset": 1559639450747,
     "meta": 1559479023000,
     "relativePath": "Script\\enemyPrefab"
   },
@@ -375,7 +375,7 @@
     "relativePath": "Prefab\\mainPlane"
   },
   "c22c9534-445e-4bc9-a32b-920afd10bd28": {
-    "asset": 1559535253313,
+    "asset": 1559640298521,
     "meta": 1559479023000,
     "relativePath": "Script\\bullet"
   },
@@ -415,12 +415,12 @@
     "relativePath": "Script\\bullet\\waveRobotBullet.js"
   },
   "2b22e3d9-2f72-4ee4-998c-e293203672f3": {
-    "asset": 1559490649547,
+    "asset": 1559640492177,
     "meta": 1559479023000,
     "relativePath": "Prefab\\enemy"
   },
   "31515085-454e-43e3-998e-b40b59d3428b": {
-    "asset": 1559490649547,
+    "asset": 1559640453911,
     "meta": 1559479023000,
     "relativePath": "Prefab\\enemyBullet"
   },
@@ -734,11 +734,6 @@
     "meta": 1559559062103,
     "relativePath": "Texture\\失败.png"
   },
-  "53f80463-e3fa-4e29-bedd-44d889102a5e": {
-    "asset": 1559563848344,
-    "meta": 1559563877587,
-    "relativePath": "Script\\mainPlane.js"
-  },
   "c610597f-ddae-4f15-9355-2a81e218e608": {
     "asset": 1559575807704,
     "meta": 1559575793319,
@@ -753,16 +748,6 @@
     "asset": 1559615637200,
     "meta": 1559615880810,
     "relativePath": "Script\\UI脚本\\levelScript.js"
-  },
-  "fdaaf788-7bbb-4ea7-94df-e7b96a4b49d7": {
-    "asset": 1559622052788,
-    "meta": 1559622542121,
-    "relativePath": "Script\\enemyControl.js"
-  },
-  "751933ee-9f03-4c50-8336-5c38480a2186": {
-    "asset": 1559622729282,
-    "meta": 1559622729287,
-    "relativePath": "Prefab\\enemy\\UFO - 001.prefab"
   },
   "c3e908af-d7ab-4c10-bce2-fc2854d4d3c8": {
     "asset": 1559622911554,
@@ -784,14 +769,49 @@
     "meta": 1559623049466,
     "relativePath": "Script\\enemyPrefab\\waveRobot.js"
   },
-  "37858e2d-17ef-4306-8415-d2cfb7bee3c4": {
-    "asset": 1559623292140,
-    "meta": 1559623297407,
-    "relativePath": "Script\\gameControl.js"
-  },
   "69df0abc-39f1-4748-bf7b-f85a43d78545": {
     "asset": 1559623270653,
     "meta": 1559623297408,
     "relativePath": "Script\\UI脚本\\coinScript.js"
+  },
+  "0690fcac-37e1-4814-9134-b7757175b7f8": {
+    "asset": 1559640431014,
+    "meta": 1559640441331,
+    "relativePath": "Script\\bullet\\throwBullet.js"
+  },
+  "e8519bfb-b566-4543-a9ba-cec6e8ac6989": {
+    "asset": 1559640453877,
+    "meta": 1559640453911,
+    "relativePath": "Prefab\\enemyBullet\\throwRobotBullet.prefab"
+  },
+  "dfcffc33-0f33-45eb-9109-bed9beb2db11": {
+    "asset": 1559643214733,
+    "meta": 1559643214745,
+    "relativePath": "Prefab\\enemy\\throwRobot.prefab"
+  },
+  "2ae15bd6-b526-4ab5-bcfc-ba10c0cfa70d": {
+    "asset": 1559643288701,
+    "meta": 1559643290417,
+    "relativePath": "Script\\enemyPrefab\\throwRobot.js"
+  },
+  "fdaaf788-7bbb-4ea7-94df-e7b96a4b49d7": {
+    "asset": 1559643769712,
+    "meta": 1559643857833,
+    "relativePath": "Script\\enemyControl.js"
+  },
+  "37858e2d-17ef-4306-8415-d2cfb7bee3c4": {
+    "asset": 1559643866064,
+    "meta": 1559643867212,
+    "relativePath": "Script\\gameControl.js"
+  },
+  "53f80463-e3fa-4e29-bedd-44d889102a5e": {
+    "asset": 1559643943745,
+    "meta": 1559644063908,
+    "relativePath": "Script\\mainPlane.js"
+  },
+  "96cf3d32-86b0-42ec-ad8f-1c7001e7ff45": {
+    "asset": 1559644170643,
+    "meta": 1559644172232,
+    "relativePath": "Script\\enemyPrefab\\heavyPlane.js"
   }
 }

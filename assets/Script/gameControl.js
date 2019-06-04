@@ -128,7 +128,7 @@ cc.Class({
         //cc.sys.localStorage.removeItem('UFOObject');
         //cc.sys.localStorage.removeItem('mainPlaneObject');
         //cc.sys.localStorage.removeItem('spacePlaneObject');
-        //cc.sys.localStorage.removeItem('levelData');
+        //cc.sys.localStorage.removeItem('throwRobotObject');
     },
 
     update(dt) { },

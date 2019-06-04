@@ -82,7 +82,6 @@ cc.Class({
                 this.creatHeavyWaterPlaneEnemy();
                 this.makeDoneFlag++;
             }
-            cc.log(enemyFlag);
         }
         this.schedule(this.makeEnemy, 2, enemyNumber);
         this.enemyNumberBar.node.active = true; //开始游戏后敌人条可见
@@ -108,38 +107,40 @@ cc.Class({
         let enemy = cc.instantiate(this.UFOPrefab);
         enemy.parent = this.node;
         this.enemyArray.push(enemy);
-        this.makeUFOEnemyNumber++;
+        //this.makeUFOEnemyNumber++;
     },
     creatRocketEnemy() {
         // 创建火箭
         let enemy = cc.instantiate(this.rocketPrefab);
         enemy.parent = this.node;
         this.enemyArray.push(enemy);
-        this.makeRocketEnemyNumber++;
+        //this.makeRocketEnemyNumber++;
     },
     creatWaveRobotEnemy() {
         // 创建波动机器人
         let enemy = cc.instantiate(this.waveRobotPrefab);
         enemy.parent = this.node;
         this.enemyArray.push(enemy);
-        this.makeWaveRobotEnemyNumber++;
-        cc.log('CWaveRobot');
+        //this.makeWaveRobotEnemyNumber++;
     },
     creatSpacePlaneEnemy() {
         // 创建深空飞船
         let enemy = cc.instantiate(this.spacePlanePrefab);
         enemy.parent = this.node;
         this.enemyArray.push(enemy);
-        this.makeSpacePlaneEnemyNumber++;
-        cc.log('CSpacePlane');
+        //this.makeSpacePlaneEnemyNumber++;
     },
     creatThrowRobotEnemy() {
         // 创建投掷机器人
-        cc.log('CThrowRobot');
+        let enemy = cc.instantiate(this.throwRobotPrefab);
+        enemy.parent = this.node;
+        this.enemyArray.push(enemy);
     },
     creatHeavyWaterPlaneEnemy() {
         // 创建重水飞船
-        cc.log('CHeavyWaterPlane');
+        let enemy = cc.instantiate(this.heavyWaterPlanePrefab);
+        enemy.parent = this.node;
+        this.enemyArray.push(enemy);
     },
 
     succeedEventEmit() {
@@ -191,6 +192,7 @@ cc.Class({
         this.rocketInitData();
         this.waveRobotInitData();
         this.spacePlaneInitData();
+        this.throwRobotInitData();
     },
 
     // 删除数组特定元素的方法
@@ -260,10 +262,38 @@ cc.Class({
             cc.sys.localStorage.setItem("spacePlaneObject", JSON.stringify(this.spacePlaneObject));
         } // 初始化数据
     },
+    throwRobotInitData(){
+        this.throwRobotObject = JSON.parse(cc.sys.localStorage.getItem("throwRobotObject")); // 获取全局对象
+        if (this.throwRobotObject == null) {
+            this.throwRobotObject = {
+                bulletAttack: 80, // 子弹攻击力
+                impactAttack: 240, // 撞击攻击力
+                health: 300,  // 初始血量
+                bulletSpeed: 12, // 初始子弹速度
+                bulletFre: 3, // 子弹频率
+                coin: 500,
+            };
+            cc.sys.localStorage.setItem("throwRobotObject", JSON.stringify(this.throwRobotObject));
+        } // 初始化数据
+    },
+    heavyPlaneInitData(){
+        this.heavyPlaneObject = JSON.parse(cc.sys.localStorage.getItem("heavyPlaneObject")); // 获取全局对象
+        if (this.heavyPlaneObject == null) {
+            this.heavyPlaneObject = {
+                bulletAttack: 300, // 子弹攻击力
+                impactAttack: 600, // 撞击攻击力
+                health: 1000,  // 初始血量
+                bulletSpeed: 5, // 初始子弹速度
+                bulletFre: 3, // 子弹频率
+                coin: 1000,
+            };
+            cc.sys.localStorage.setItem("heavyPlaneObject", JSON.stringify(this.heavyPlaneObject));
+        } // 初始化数据
+    },
     /**********************/
 
     onLoad() {
-        this.enemyNumberBar.progress = -1;
+
     },
 
     start() {
